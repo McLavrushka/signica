@@ -1,0 +1,1204 @@
+# Figma spec — Signica
+
+Координаты внутри каждого фрейма (0,0 — левый верхний угол фрейма), в логических точках при базовой ширине 375.
+
+## Main - Actions (`1:228`) — 375x812
+
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **BG** `FRAME` — x=0 y=0 w=375 h=185
+  - **Image** `RECTANGLE` — x=-24 y=-27 w=422 h=212  fill=IMAGE
+  - **Frame 2131332013** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `FRAME` — x=12 y=129 w=351 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=20 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=16 y=133 w=119 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=66.5 y=138 w=18 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=131 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=132 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER
+      - **Label** `TEXT` — x=165 y=138 w=45 h=18  fill=#191919 a=0.40  text="Signed"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=243 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=244 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=254 y=138 w=91 h=18  fill=#191919 a=0.40  text="Unsigned"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Tapbar-Search** `FRAME` — x=12 y=703 w=351 h=62.9
+  - **Frame 7289** `FRAME` — x=185 y=704 w=178 h=61  VERTICAL gap=10 pad(l,t,r,b)=14,19,14,19  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **Frame 2131332144** `FRAME` — x=199 y=723 w=150 h=23  HORIZONTAL gap=8 cross=CENTER
+      - **􀁍** `TEXT` — x=199 y=723 w=25 h=23  fill=#303030  text="􀁍"  font=SF Pro 20.289/590 lh=22.32 CENTER
+      - **Add Document** `TEXT` — x=232 y=725 w=117 h=19  fill=#303030  text="Add Document"  font=Inter 16/700 lh=19.20 RIGHT
+  - **Frame 7290** `FRAME` — x=12 y=703 w=62.9 h=62.9  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31
+    - **􀊫** `TEXT` — x=15.93 y=706.61 w=54.78 h=54.78  fill=#303030  text="􀊫"  font=SF Pro 20.289/590 lh=22.32 CENTER
+- **Frame 2131332001** `FRAME` — x=18 y=59 w=115 h=38  HORIZONTAL gap=10 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=18 y=59 w=38 h=38  r=15.2  fill=#87E64C/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **mdi:sign** `FRAME` — x=18 y=59 w=38 h=38
+      - **Vector** `VECTOR` — x=25.92 y=51.08 w=42.75 h=41.17  fill=#191919
+  - **Signica** `TEXT` — x=66 y=67 w=67 h=22  fill=#FFFFFF  text="Signica"  font=Inter 18/800 lh=21.60 LEFT
+- **Frame 2131332025** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+    - **􀍠** `TEXT` — x=329.6 y=65.33 w=22 h=26  fill=#FFFFFF  text="􀍠"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=140 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=197 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame** `FRAME` — x=99 y=109 w=262 h=201
+  - **Menu - iPhone** `FRAME` — x=99 y=109 w=262 h=100
+    - **Liquid Glass - Regular - Medium** `INSTANCE` — x=99 y=109 w=262 h=100
+      - **Shadow** `FRAME` — x=73 y=83 w=314 h=152
+        - **Mask** `INSTANCE` — x=23 y=33 w=414 h=252  fill=#FFFFFF
+          - **Shape** `RECTANGLE` — x=99 y=109 w=262 h=100  r=34  fill=#000000
+        - **Blur** `FRAME` — x=99 y=114 w=262 h=100  r=34  fill=#000000 a=0.08  fx=BACKGROUND_BLUR r=80; LAYER_BLUR r=40
+      - **Fill** `FRAME` — x=99 y=109 w=262 h=100  r=34  fill=#262626/#F5F5F5 a=0.60
+      - **Glass Effect** `FRAME` — x=99 y=109 w=262 h=100  r=34  fill=#000000 a=0.00
+    - **Menu Items** `FRAME` — x=99 y=109 w=262 h=201
+      - **Item** `INSTANCE` — x=131 y=119 w=218 h=40  HORIZONTAL gap=4 pad(l,t,r,b)=8,0,8,0 cross=CENTER
+        - **Leading** `FRAME` — x=139 y=119 w=202 h=40  HORIZONTAL gap=8 cross=CENTER
+          - **Symbol** `TEXT` — x=139 y=128 w=28 h=22  fill=#333333  text="􀁢"  font=SF Pro 17/400 lh=22.00 CENTER
+          - **Label and Subtitle** `FRAME` — x=175 y=119 w=166 h=40  VERTICAL gap=2 pad(l,t,r,b)=0,10,0,10 main=CENTER
+            - **Label** `TEXT` — x=175 y=129 w=166 h=20  fill=#333333  text="Select"  font=Inter 17/400 lh=20.00 ls=-0.43 LEFT
+      - **Item** `INSTANCE` — x=131 y=159 w=218 h=40  HORIZONTAL gap=4 pad(l,t,r,b)=8,0,8,0 cross=CENTER
+        - **Leading** `FRAME` — x=139 y=159 w=202 h=40  HORIZONTAL gap=8 cross=CENTER
+          - **Symbol** `TEXT` — x=139 y=168 w=28 h=22  fill=#333333  text="􀁍"  font=SF Pro 17/400 lh=22.00 CENTER
+          - **Label and Subtitle** `FRAME` — x=175 y=159 w=166 h=40  VERTICAL gap=2 pad(l,t,r,b)=0,10,0,10 main=CENTER
+            - **Label** `TEXT` — x=175 y=169 w=166 h=20  fill=#333333  text="Add Document"  font=Inter 17/400 lh=20.00 ls=-0.43 LEFT
+
+## Main - Empty (`1:611`) — 375x812
+
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **BG** `FRAME` — x=0 y=0 w=375 h=185
+  - **Image** `RECTANGLE` — x=-24 y=-27 w=422 h=212  fill=IMAGE
+  - **Frame 2131332013** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+    - **Frame 2131332025** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀍠** `TEXT` — x=329.6 y=65.33 w=22 h=26  fill=#FFFFFF  text="􀍠"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `INSTANCE` — x=16 y=129 w=343 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=24 y=133 w=117.33 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=20 y=133 w=125 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=34 y=138 w=97.33 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=141.33 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=142.33 y=133 w=103.83 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=152.33 y=138 w=83.83 h=18  fill=#191919  text="Signed"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=246.17 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=247.17 y=133 w=103.83 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=257.17 y=138 w=83.83 h=18  fill=#191919  text="Unsigned"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332001** `FRAME` — x=18 y=59 w=115 h=38  HORIZONTAL gap=10 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=18 y=59 w=38 h=38  r=15.2  fill=#87E64C/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **mdi:sign** `FRAME` — x=18 y=59 w=38 h=38
+      - **Vector** `VECTOR` — x=25.92 y=51.08 w=42.75 h=41.17  fill=#191919
+  - **Signica** `TEXT` — x=66 y=67 w=67 h=22  fill=#FFFFFF  text="Signica"  font=Inter 18/800 lh=21.60 LEFT
+- **Frame 2131332134** `FRAME` — x=16 y=409 w=343 h=53  VERTICAL gap=14
+  - **Frame 2131331604** `FRAME` — x=16 y=409 w=343 h=53  VERTICAL gap=10 cross=CENTER
+    - **No Documents Yet** `TEXT` — x=97 y=409 w=181 h=24  fill=#303030  text="No Documents Yet"  font=Inter 20/700 lh=24.00 CENTER
+    - **Your can add documents from** `TEXT` — x=55 y=443 w=265 h=19  fill=#303030 a=0.40  text="Your can add documents from "  font=Inter 15/400 lh=19.50 CENTER
+- **Frame 2131332030** `FRAME` — x=16 y=478 w=343 h=124  HORIZONTAL gap=12 main=CENTER
+  - **Tab** `FRAME` — x=63 y=478 w=109 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#1D1D1D a=0.20/#FFFFFF a=0.20
+    - **Frame 2131332028** `FRAME` — x=83 y=494 w=24 h=24  r=7  fill=IMAGE
+    - **Text** `TEXT` — x=115 y=498 w=37 h=16  fill=#373737  text="Files"  font=Inter 16/700 lh=16.00 CENTER
+  - **Tab** `FRAME` — x=184 y=478 w=128 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#1D1D1D a=0.20/#FFFFFF a=0.20
+    - **Frame 2131332028** `FRAME` — x=204 y=494 w=24 h=24  r=7  fill=#FFFFFF/IMAGE
+    - **Text** `TEXT` — x=236 y=498 w=56 h=16  fill=#373737  text="Photos"  font=Inter 16/700 lh=16.00 CENTER
+  - **Tab** `FRAME` — x=118.5 y=546 w=138 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#1D1D1D a=0.20/#FFFFFF a=0.20
+    - **Frame 2131332028** `FRAME` — x=138.5 y=562 w=24 h=24  r=7  fill=#FFFFFF/IMAGE
+    - **Text** `TEXT` — x=170.5 y=566 w=66 h=16  fill=#373737  text="Scanner"  font=Inter 16/700 lh=16.00 CENTER
+- **Tapbar-Search** `FRAME` — x=12 y=703 w=351 h=62.9
+  - **Frame 7289** `FRAME` — x=185 y=704 w=178 h=61  VERTICAL gap=10 pad(l,t,r,b)=14,19,14,19  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **Frame 2131332144** `FRAME` — x=199 y=723 w=150 h=23  HORIZONTAL gap=8 cross=CENTER
+      - **􀁍** `TEXT` — x=199 y=723 w=25 h=23  fill=#303030  text="􀁍"  font=SF Pro 20.289/590 lh=22.32 CENTER
+      - **Add Document** `TEXT` — x=232 y=725 w=117 h=19  fill=#303030  text="Add Document"  font=Inter 16/700 lh=19.20 RIGHT
+  - **Frame 7290** `FRAME` — x=12 y=703 w=62.9 h=62.9  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31
+    - **􀊫** `TEXT` — x=15.93 y=706.61 w=54.78 h=54.78  fill=#303030  text="􀊫"  font=SF Pro 20.289/590 lh=22.32 CENTER
+- **Picture** `FRAME` — x=51.5 y=231 w=272 h=160
+  - **Frame 2131331025** `FRAME` — x=105.12 y=244.41 w=163.87 h=222.12  r=7.79364  fill=IMAGE
+    - **Frame 2131331017** `FRAME` — x=186.34 y=315.46 w=72.15 h=72.15
+      - **Rectangle 88** `RECTANGLE` — x=189.42 y=318.54 w=65.99 h=59.2  fill=#FFFFFF  stroke=#FFFFFF/#6FFF16 w=0.8199166059494019  fx=BACKGROUND_BLUR r=183.269
+      - **Group** `GROUP` — x=196.18 y=333.49 w=51.93 h=35.89
+        - **Vector** `VECTOR` — x=222.39 y=334.19 w=25.72 h=28.83  fill=#000000
+        - **Vector** `VECTOR` — x=196.18 y=336.96 w=29.95 h=31.84  fill=#000000
+        - **Vector** `VECTOR` — x=198.58 y=349.99 w=4.17 h=11.77  fill=#000000
+  - **Frame 2131332294** `FRAME` — x=105 y=332 w=164 h=59  fill=GRADIENT_LINEAR(#F0F0F0 a=0.00,#F0F0F0)
+  - **image 2212** `RECTANGLE` — x=201.24 y=225.19 w=103.24 h=148.04  fill=IMAGE  fx=DROP_SHADOW #000000 a=0.10 dx=0.627526 dy=1.25505 blur=3.13763 spread=0
+
+## Main - Add Document (`1:737`) — 375x812
+
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **BG** `FRAME` — x=0 y=0 w=375 h=185
+  - **Image** `RECTANGLE` — x=-24 y=-27 w=422 h=212  fill=IMAGE
+  - **Frame 2131332013** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+    - **Frame 2131332025** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀍠** `TEXT` — x=329.6 y=65.33 w=22 h=26  fill=#FFFFFF  text="􀍠"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `INSTANCE` — x=16 y=129 w=343 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=24 y=133 w=117.33 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=20 y=133 w=125 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=34 y=138 w=97.33 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=141.33 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=142.33 y=133 w=103.83 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=152.33 y=138 w=83.83 h=18  fill=#191919  text="Signed"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=246.17 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=247.17 y=133 w=103.83 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=257.17 y=138 w=83.83 h=18  fill=#191919  text="Unsigned"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332001** `FRAME` — x=18 y=59 w=115 h=38  HORIZONTAL gap=10 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=18 y=59 w=38 h=38  r=15.2  fill=#87E64C/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **mdi:sign** `FRAME` — x=18 y=59 w=38 h=38
+      - **Vector** `VECTOR` — x=25.92 y=51.08 w=42.75 h=41.17  fill=#191919
+  - **Signica** `TEXT` — x=66 y=67 w=67 h=22  fill=#FFFFFF  text="Signica"  font=Inter 18/800 lh=21.60 LEFT
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=357 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=361 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=408 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=412.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=673 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=677.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=425 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=429.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=622 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=626 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=673 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=677.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332026** `FRAME` — x=0 y=113 w=375 h=699  r=36  fill=#000000 a=0.00
+  - **Tapbar-Search** `FRAME` — x=8 y=703 w=351 h=62.9
+    - **Frame 7289** `FRAME` — x=296.1 y=703 w=62.9 h=62.9  r=100  fill=#7B5B5B a=0.20/#FFFFFF a=0.90
+      - **Frame 7290** `FRAME` — x=296 y=703 w=62.9 h=62.9  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31
+        - **􀆄** `TEXT` — x=299.93 y=706.61 w=54.78 h=54.78  fill=#404040  text="􀆄"  font=SF Pro 17/510 lh=20.29 CENTER
+    - **Add Document From** `TEXT` — x=123 y=724 w=161 h=19  fill=#191919  text="Add Document From"  font=Inter 16/700 lh=19.20 RIGHT
+  - **Frame 2131332031** `FRAME` — x=219 y=499 w=128 h=192  VERTICAL gap=12 cross=MAX
+    - **Frame 2131332031** `FRAME` — x=219 y=499 w=128 h=192  VERTICAL gap=12 cross=MAX
+      - **Frame 2131332030** `FRAME` — x=219 y=499 w=128 h=192  VERTICAL gap=12 cross=MAX
+        - **Tab** `FRAME` — x=219 y=499 w=128 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#7B5B5B a=0.20/#FFFFFF a=0.90
+          - **Frame 2131332028** `FRAME` — x=248.5 y=515 w=24 h=24  r=7  fill=IMAGE
+          - **Text** `TEXT` — x=280.5 y=519 w=37 h=16  fill=#191919  text="Files"  font=Inter 16/700 lh=16.00 CENTER
+        - **Tab** `FRAME` — x=219 y=567 w=128 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#7B5B5B a=0.20/#FFFFFF a=0.90
+          - **Frame 2131332028** `FRAME` — x=239 y=583 w=24 h=24  r=7  fill=#FFFFFF/IMAGE
+          - **Text** `TEXT` — x=271 y=587 w=56 h=16  fill=#191919  text="Photos"  font=Inter 16/700 lh=16.00 CENTER
+        - **Tab** `FRAME` — x=219 y=635 w=128 h=56  HORIZONTAL gap=8 pad(l,t,r,b)=20,16,20,16 main=CENTER cross=CENTER  r=100  fill=#7B5B5B a=0.20/#FFFFFF a=0.90
+          - **Frame 2131332028** `FRAME` — x=234 y=651 w=24 h=24  r=7  fill=#FFFFFF/IMAGE
+          - **Text** `TEXT` — x=266 y=655 w=66 h=16  fill=#191919  text="Scanner"  font=Inter 16/700 lh=16.00 CENTER
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332027** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+
+## Main - Search (`1:2312`) — 375x812
+
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **BG** `FRAME` — x=0 y=0 w=375 h=185
+  - **Image** `RECTANGLE` — x=-24 y=-27 w=422 h=212  fill=IMAGE
+  - **Frame 2131332013** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `FRAME` — x=12 y=129 w=351 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=20 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=16 y=133 w=119 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=66.5 y=138 w=18 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=131 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=132 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER
+      - **Label** `TEXT` — x=165 y=138 w=45 h=18  fill=#191919 a=0.40  text="Signed"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=243 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=244 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=254 y=138 w=91 h=18  fill=#191919 a=0.40  text="Unsigned"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332001** `FRAME` — x=18 y=59 w=115 h=38  HORIZONTAL gap=10 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=18 y=59 w=38 h=38  r=15.2  fill=#87E64C/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **mdi:sign** `FRAME` — x=18 y=59 w=38 h=38
+      - **Vector** `VECTOR` — x=25.92 y=51.08 w=42.75 h=41.17  fill=#191919
+  - **Signica** `TEXT` — x=66 y=67 w=67 h=22  fill=#FFFFFF  text="Signica"  font=Inter 18/800 lh=21.60 LEFT
+- **Frame 2131332025** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+    - **􀍠** `TEXT` — x=329.6 y=65.33 w=22 h=26  fill=#FFFFFF  text="􀍠"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+- **Frame 2131332026** `FRAME` — x=271 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `FRAME` — x=82 y=337 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=89.5 y=345 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=140 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=197 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=622 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=626 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+    - **Frame 2131332025** `FRAME` — x=309 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Keyboard** `INSTANCE` — x=0 y=495 w=375 h=317  VERTICAL gap=10 cross=MAX
+  - **Keyboard** `FRAME` — x=0 y=495 w=375 h=317  VERTICAL pad(l,t,r,b)=0,12,0,10 cross=CENTER
+    - **Background** `INSTANCE` — x=0 y=495 w=375 h=317  VERTICAL main=CENTER cross=CENTER  r=27  fill=#D4D4D4 a=0.74/#1B1B1B/#E6E9ED
+    - **Keys** `INSTANCE` — x=0 y=507 w=375 h=225  VERTICAL gap=11 pad(l,t,r,b)=8.5,12,8.5,0 cross=CENTER
+      - **Row 1** `FRAME` — x=8.5 y=519 w=358 h=45  HORIZONTAL gap=6 main=CENTER cross=CENTER
+        - **Key** `INSTANCE` — x=8.5 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=8.5 y=524 w=30 h=30  fill=#595959  text="q"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=44.9 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=44.9 y=524 w=30 h=30  fill=#595959  text="w"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=81.3 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=81.3 y=524 w=30 h=30  fill=#595959  text="e"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=117.7 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=117.7 y=524 w=30 h=30  fill=#595959  text="r"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=154.1 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=154.1 y=524 w=30 h=30  fill=#595959  text="t"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=190.5 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=190.5 y=524 w=30 h=30  fill=#595959  text="y"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=226.9 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=226.9 y=524 w=30 h=30  fill=#595959  text="u"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=263.3 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=263.3 y=524 w=30 h=30  fill=#595959  text="i"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=299.7 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=299.7 y=524 w=30 h=30  fill=#595959  text="o"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=336.1 y=519 w=30.4 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=336.1 y=524 w=30 h=30  fill=#595959  text="p"  font=SF Compact 25/457 lh=30.00 CENTER
+      - **Row 2** `FRAME` — x=8.5 y=575 w=358 h=45  HORIZONTAL gap=6 pad(l,t,r,b)=20,0,20,0 main=CENTER cross=CENTER
+        - **Key** `INSTANCE` — x=28.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=28.5 y=580 w=30 h=30  fill=#595959  text="a"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=64.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=64.5 y=580 w=30 h=30  fill=#595959  text="s"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=100.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=100.5 y=580 w=30 h=30  fill=#595959  text="d"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=136.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=136.5 y=580 w=30 h=30  fill=#595959  text="f"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=172.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=172.5 y=580 w=30 h=30  fill=#595959  text="g"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=208.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=208.5 y=580 w=30 h=30  fill=#595959  text="h"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=244.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=244.5 y=580 w=30 h=30  fill=#595959  text="j"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=280.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=280.5 y=580 w=30 h=30  fill=#595959  text="k"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Key** `INSTANCE` — x=316.5 y=575 w=30 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=316.5 y=580 w=30 h=30  fill=#595959  text="l"  font=SF Compact 25/457 lh=30.00 CENTER
+      - **Row 3** `FRAME` — x=8.5 y=631 w=358 h=45  HORIZONTAL gap=14.25 cross=CENTER
+        - **Shift Key** `INSTANCE` — x=8.5 y=631 w=44.67 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=8.5 y=639 w=45 h=28  fill=#595959  text="􀆝"  font=SF Compact 23/457 lh=28.00 CENTER UPPER
+        - **Row 3** `FRAME` — x=67.42 y=631 w=239.83 h=45  HORIZONTAL gap=6
+          - **Key** `INSTANCE` — x=67.42 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=67.42 y=636 w=29 h=30  fill=#595959  text="z"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=102.54 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=102.54 y=636 w=29 h=30  fill=#595959  text="x"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=137.65 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=137.65 y=636 w=29 h=30  fill=#595959  text="c"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=172.77 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=172.77 y=636 w=29 h=30  fill=#595959  text="v"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=207.89 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=207.89 y=636 w=29 h=30  fill=#595959  text="b"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=243.01 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=243.01 y=636 w=29 h=30  fill=#595959  text="n"  font=SF Compact 25/457 lh=30.00 CENTER
+          - **Key** `INSTANCE` — x=278.13 y=631 w=29.12 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=278.13 y=636 w=29 h=30  fill=#595959  text="m"  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Delete Key** `INSTANCE` — x=321.5 y=631 w=45 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **Glyph** `TEXT` — x=321.5 y=639 w=45 h=28  fill=#595959  text="􁂈"  font=SF Compact 23/457 lh=28.00 CENTER UPPER
+      - **Row 4** `FRAME` — x=8.5 y=687 w=358 h=45  HORIZONTAL gap=6 cross=CENTER
+        - **Keyboard Switch** `INSTANCE` — x=8.5 y=687 w=91.67 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+          - **ABC** `TEXT` — x=6.5 y=699 w=96 h=21  fill=#595959  text="ABC"  font=SF Compact Rounded 18/400 lh=21.00 CENTER
+        - **Space** `INSTANCE` — x=106.17 y=687 w=162.33 h=45  HORIZONTAL gap=10 cross=CENTER  r=8.5
+          - **Space** `INSTANCE` — x=106.17 y=687 w=162.33 h=45  r=8.5  fill=#FFFFFF a=0.30/#333333
+            - **Glyph** `TEXT` — x=106.17 y=692 w=152 h=30  fill=#595959  text=" "  font=SF Compact 25/457 lh=30.00 CENTER
+        - **Return** `INSTANCE` — x=274.5 y=687 w=92 h=45  r=8.5
+          - **BG** `RECTANGLE` — x=274.5 y=687 w=92 h=45  r=8.5  fill=#0088FF
+          - **􀅇** `TEXT` — x=274.5 y=688 w=92 h=42  fill=#FFFFFF  text="􀅇"  font=SF Pro 19/400 lh=28.00 CENTER
+    - **Emoji and Mic** `FRAME` — x=0 y=732 w=375 h=70  HORIZONTAL pad(l,t,r,b)=36,27,39,15 main=SPACE_BETWEEN
+      - **Emoji** `VECTOR` — x=36 y=759 w=26.92 h=26.92  fill=#222B59 a=0.63
+      - **Mic** `VECTOR` — x=317.13 y=759 w=18.87 h=28.21  fill=#222B59 a=0.63
+- **Toolbar - Bottom** `INSTANCE` — x=0 y=435 w=375 h=60  HORIZONTAL gap=12 pad(l,t,r,b)=16,4,16,8
+  - **Search Field** `INSTANCE` — x=16 y=439 w=283 h=48  HORIZONTAL gap=4 pad(l,t,r,b)=11,0,10,0 main=CENTER cross=CENTER  r=296  fill=#FFFFFF
+    - **BG** `INSTANCE` — x=16 y=439 w=283 h=48
+      - **Blur** `FRAME` — x=-10 y=413 w=335 h=100  opacity=0.67
+        - **Mask** `INSTANCE` — x=-60 y=363 w=435 h=200  fill=#FFFFFF
+          - **Shape** `RECTANGLE` — x=16 y=439 w=283 h=48  r=1000  fill=#000000
+        - **Blur** `FRAME` — x=16 y=441 w=283 h=48  r=1000  fill=#000000 a=0.04  fx=BACKGROUND_BLUR r=40; LAYER_BLUR r=20
+      - **Fill** `FRAME` — x=16 y=439 w=283 h=48  r=296  fill=#333333/#FFFFFF a=0.50/#F7F7F7
+      - **Glass Effect** `FRAME` — x=16 y=439 w=283 h=48  r=296  fill=#000000 a=0.00
+    - **􀊫** `TEXT` — x=27 y=453 w=26 h=20  fill=#404040  text="􀊫"  font=SF Pro 17/510 lh=20.29 CENTER
+    - **Label** `TEXT` — x=57 y=452.5 w=228 h=21  fill=#D9D9D9  text="|Search Documents"  font=Sora 17/600 lh=21.42 LEFT
+    - **􀊰** `TEXT` — x=289 y=453 w=0 h=20  fill=#8C8C8C  text=""  font=SF Pro 17/510 lh=20.29 CENTER
+  - **Button** `INSTANCE` — x=311 y=439 w=48 h=48  HORIZONTAL gap=12 pad(l,t,r,b)=6,0,6,0 main=CENTER cross=CENTER  r=296  fill=#FFFFFF
+    - **BG** `INSTANCE` — x=311 y=439 w=48 h=48
+      - **Blur** `FRAME` — x=285 y=413 w=100 h=100  opacity=0.67
+        - **Mask** `INSTANCE` — x=235 y=363 w=200 h=200  fill=#FFFFFF
+          - **Shape** `RECTANGLE` — x=311 y=439 w=48 h=48  r=1000  fill=#000000
+        - **Blur** `FRAME` — x=311 y=441 w=48 h=48  r=1000  fill=#000000 a=0.04  fx=BACKGROUND_BLUR r=40; LAYER_BLUR r=20
+      - **Fill** `FRAME` — x=311 y=439 w=48 h=48  r=296  fill=#333333/#FFFFFF a=0.50/#F7F7F7
+      - **Glass Effect** `FRAME` — x=311 y=439 w=48 h=48  r=296  fill=#000000 a=0.00
+    - **Symbol 1** `INSTANCE` — x=317 y=445 w=36 h=36  VERTICAL  r=100
+      - **Symbol** `TEXT` — x=317 y=445 w=36 h=36  fill=#404040  text="􀆄"  font=SF Pro 17/510 lh=20.29 CENTER
+
+## Select (`1:2938`) — 375x812
+
+- **BG** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+  - **Header** `FRAME` — x=0 y=47 w=375 h=62  HORIZONTAL gap=12 pad(l,t,r,b)=16,12,16,12 main=SPACE_BETWEEN cross=CENTER
+    - **Frame 2131332000** `FRAME` — x=16 y=59 w=89 h=38  HORIZONTAL gap=10 pad(l,t,r,b)=12,6,12,6 main=CENTER cross=CENTER  r=15.2  fill=#FFFFFF a=0.10
+      - **Label** `TEXT` — x=28 y=69 w=65 h=18  fill=#FFFFFF  text="Select All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Frame 2131332027** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀆄** `TEXT` — x=330 y=65 w=21 h=26  fill=#FFFFFF  text="􀆄"  font=SF Pro 19.5451/590 lh=25.29 CENTER
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#6AD528  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+    - **􀀀** `TEXT` — x=84 y=787 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **􀀀** `TEXT` — x=253 y=787 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#6AD528  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `FRAME` — x=12 y=129 w=351 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=20 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=16 y=133 w=119 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=66.5 y=138 w=18 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=131 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=132 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER
+      - **Label** `TEXT` — x=165 y=138 w=45 h=18  fill=#191919 a=0.40  text="Signed"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=243 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=244 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=254 y=138 w=91 h=18  fill=#191919 a=0.40  text="Unsigned"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#191919 a=0.10 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#191919 a=0.10 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `FRAME` — x=82 y=337 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=89.5 y=345 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+    - **􀀀** `TEXT` — x=84 y=277 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=140 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **􀀀** `TEXT` — x=84 y=542 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=197 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **􀀀** `TEXT` — x=253 y=277 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **Tab** `FRAME` — x=251 y=602 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=258.5 y=610 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+    - **􀀀** `TEXT` — x=253 y=542 w=38 h=23  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀀀"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Tapbar-Search** `FRAME` — x=12 y=716 w=351 h=62  HORIZONTAL gap=103 main=SPACE_BETWEEN cross=CENTER
+  - **Frame 7291** `FRAME` — x=12 y=716 w=62 h=62  r=60  fill=#191919 a=0.20/#FFFFFF a=0.90
+    - **􀈑** `TEXT` — x=15.93 y=719.61 w=54.78 h=54.78  fill=#191919/#FF383C  opacity=0.50  text="􀈑"  font=SF Pro 20.289/700 lh=22.32 CENTER
+  - **Frame 7290** `FRAME` — x=301 y=716 w=62 h=62  r=60  fill=#191919 a=0.20/#FFFFFF a=0.90
+    - **􀈂** `TEXT` — x=304.93 y=719.61 w=54.78 h=54.78  fill=#191919  opacity=0.50  text="􀈂"  font=SF Pro 20.289/700 lh=22.32 CENTER
+
+## Select All (`1:3099`) — 375x812
+
+- **BG** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+  - **Header** `FRAME` — x=0 y=47 w=375 h=62
+    - **Frame 2131332000** `FRAME` — x=16 y=59 w=129 h=38  HORIZONTAL gap=10 pad(l,t,r,b)=12,6,12,6 main=CENTER cross=CENTER  r=15.2  fill=#FFFFFF a=0.10
+      - **Label** `TEXT` — x=28 y=69 w=105 h=18  fill=#FFFFFF  text="Deselect All (3)"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Frame 2131332028** `FRAME` — x=128 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER  opacity=0.00
+      - **Frame 2131332000** `FRAME` — x=128 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10/GRADIENT_LINEAR(#87E64C,#A1FF67)
+        - **􁙕** `TEXT` — x=133 y=65 w=28 h=26  fill=#191919  text="􁙕"  font=SF Pro 19.5451/590 lh=25.29 CENTER
+    - **6 Items** `TEXT` — x=122 y=67 w=131 h=22  fill=#FFFFFF  opacity=0.00  text="6 Items"  font=Inter 18/700 lh=21.60 CENTER
+    - **Frame 2131332027** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀆄** `TEXT` — x=330 y=65 w=21 h=26  fill=#FFFFFF  text="􀆄"  font=SF Pro 19.5451/590 lh=25.29 CENTER
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#6AD528  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+    - **􀁣** `TEXT` — x=84 y=787 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **􀁣** `TEXT` — x=253 y=787 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#6AD528  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `FRAME` — x=12 y=129 w=351 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=20 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=16 y=133 w=119 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=66.5 y=138 w=18 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=131 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=132 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER
+      - **Label** `TEXT` — x=165 y=138 w=45 h=18  fill=#191919 a=0.40  text="Signed"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=243 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=244 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=254 y=138 w=91 h=18  fill=#191919 a=0.40  text="Unsigned"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#191919 a=0.10 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#191919 a=0.10 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `FRAME` — x=82 y=337 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=89.5 y=345 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+    - **􀁣** `TEXT` — x=84 y=277 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=140 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **􀁣** `TEXT` — x=84 y=542 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=197 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **􀁣** `TEXT` — x=253 y=277 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=309 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+    - **Tab** `FRAME` — x=251 y=602 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=258.5 y=610 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+    - **􀁣** `TEXT` — x=253 y=542 w=38 h=23  fill=#FFFFFF/#6AD528  stroke=#FFFFFF w=3.0  fx=DROP_SHADOW #000000 a=0.60 dx=0 dy=1 blur=2 spread=0  text="􀁣"  font=SF Pro 32/400 lh=22.32 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Tapbar-Search** `FRAME` — x=12 y=716 w=351 h=62  HORIZONTAL gap=103 main=SPACE_BETWEEN cross=CENTER
+  - **Frame 7291** `FRAME` — x=12 y=716 w=62 h=62  r=60  fill=#191919 a=0.20/#FFFFFF a=0.90
+    - **􀈑** `TEXT` — x=15.93 y=719.61 w=54.78 h=54.78  fill=#191919/#FF383C  text="􀈑"  font=SF Pro 20.289/700 lh=22.32 CENTER
+  - **Frame 7290** `FRAME` — x=301 y=716 w=62 h=62  r=60  fill=#191919 a=0.20/#FFFFFF a=0.90
+    - **􀈂** `TEXT` — x=304.93 y=719.61 w=54.78 h=54.78  fill=#191919  text="􀈂"  font=SF Pro 20.289/700 lh=22.32 CENTER
+
+## Main - Filled - Document Actions (`1:3426`) — 375x812
+
+- **Frame 2131332021** `FRAME` — x=28 y=707 w=150 h=224  VERTICAL gap=8 cross=CENTER  opacity=0.20
+  - **Frame 2131332016** `FRAME` — x=28 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=69 y=867 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=77 y=871 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=897 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=897 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=918 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=918 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=922.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=918 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332022** `FRAME` — x=28 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=972 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=978.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=972 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=55 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=1162 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=55 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=81 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=89 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332023** `FRAME` — x=197 y=707 w=150 h=241  VERTICAL gap=8 cross=CENTER  opacity=0.20
+  - **Frame 2131332016** `FRAME` — x=197 y=707 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=713.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=707 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=897 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=897 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=935 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=935 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=939.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=935 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332024** `FRAME` — x=197 y=972 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=197 y=972 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=979.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=1132 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=1136 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=1162 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=1162 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=1183 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=224 y=1183 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=250 y=1187.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=258 y=1183 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **BG** `FRAME` — x=0 y=0 w=375 h=185
+  - **Image** `RECTANGLE` — x=-24 y=-27 w=422 h=212  fill=IMAGE
+  - **Frame 2131332013** `FRAME` — x=0 y=0 w=375 h=185  fill=#242424
+    - **Frame 2131332025** `FRAME` — x=321 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=321 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀍠** `TEXT` — x=329.6 y=65.33 w=22 h=26  fill=#FFFFFF  text="􀍠"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+    - **Frame 2131332026** `FRAME` — x=271 y=59 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+      - **Frame 2131332000** `FRAME` — x=271 y=59 w=38 h=38  r=15.2  fill=#FFFFFF a=0.10
+        - **􀣌** `TEXT` — x=278.6 y=65.33 w=24 h=26  fill=#FFFFFF  text="􀣌"  font=SF Pro 19.5451/400 lh=25.29 CENTER
+- **Frame 2131332009** `FRAME` — x=16 y=913 w=165.5 h=226  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=32 y=929 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=32 y=929 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=32 y=950 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=32 y=950 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=58 y=954.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=66 y=950 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=30 y=971 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=16 y=979 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=16 y=1111 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131332011** `FRAME` — x=194 y=991 w=165 h=252  r=20  fill=#FFFFFF  stroke=#000000 a=0.09 w=1.0
+  - **Frame 2131332005** `FRAME` — x=210 y=1007 w=96 h=34  VERTICAL gap=4
+    - **Document** `TEXT` — x=210 y=1007 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 LEFT
+    - **Frame 2131331992** `FRAME` — x=210 y=1028 w=96 h=13  HORIZONTAL gap=4 cross=CENTER
+      - **PDF** `TEXT` — x=210 y=1028 w=22 h=13  fill=#929292  text="PDF"  font=Inter 11/400 lh=13.20 LEFT
+      - **Ellipse 1** `ELLIPSE` — x=236 y=1032.5 w=4 h=4  fill=#DDDDDD
+      - **12.04.2025** `TEXT` — x=244 y=1028 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+  - **Line 1** `LINE` — x=208 y=1049 w=137 h=0  stroke=#E8E8E8 w=1.0
+  - **PDF img** `FRAME` — x=194 y=1057 w=165 h=192  r=6  fill=#FFFFFF a=0.07/IMAGE
+  - **Frame 2131331997** `FRAME` — x=194 y=1215 w=162 h=28  fill=GRADIENT_LINEAR(#FFFFFF a=0.00,#FFFFFF)
+- **Frame 2131331987** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL  fx=BACKGROUND_BLUR r=60
+  - **[status-bar]** `FRAME` — x=0 y=0 w=375 h=47  VERTICAL gap=10
+    - **StatusBar / X** `FRAME` — x=0 y=0 w=375 h=47
+      - **Notch** `GROUP` — x=110 y=-2 w=0 h=0  r=0
+      - **Left Side** `GROUP` — x=25 y=14 w=54 h=21  r=24
+        - **_StatusBar-time** `FRAME` — x=25 y=14 w=54 h=21  r=24
+          - **✏️ Time** `TEXT` — x=25 y=15 w=54 h=20  fill=#FFFFFF  text="9:41"  font=SF Pro Text 17/600 lh=22.00 ls=-0.41 CENTER
+      - **Right Side** `GROUP` — x=274 y=19 w=77.4 h=13
+        - **_StatusBar-battery** `FRAME` — x=324 y=19 w=27.4 h=13
+          - **Outline** `VECTOR` — x=324 y=19 w=25 h=13  r=4  stroke=#FFFFFF w=1.0  opacity=0.35
+          - **Battery End** `VECTOR` — x=350 y=24 w=1.4 h=4.22  fill=#FFFFFF  opacity=0.40
+          - **Fill** `VECTOR` — x=326 y=21 w=15 h=9  r=2  fill=#FFFFFF
+        - **Wifi** `BOOLEAN_OPERATION` — x=300 y=20 w=17 h=11.83  fill=#FFFFFF
+          - **Wifi-path** `VECTOR` — x=300 y=20 w=17 h=5.39  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=303 y=24 w=11.07 h=4.13  fill=#DADADA
+          - **Wifi-path** `VECTOR` — x=306 y=28 w=5.15 h=3.83  fill=#DADADA
+        - **Icon / Mobile Signal** `VECTOR` — x=274 y=20 w=18 h=12  fill=#FFFFFF
+- **Home Indicator** `FRAME` — x=0 y=778 w=375 h=34
+  - **Home Indicator** `RECTANGLE` — x=121 y=799 w=134 h=5  r=100  fill=#000000
+- **Tapbar-Search** `FRAME` — x=12 y=703 w=351 h=62.9
+  - **Frame 7289** `FRAME` — x=185 y=704 w=178 h=61  VERTICAL gap=10 pad(l,t,r,b)=14,19,14,19  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **Frame 2131332144** `FRAME` — x=199 y=723 w=150 h=23  HORIZONTAL gap=8 cross=CENTER
+      - **􀁍** `TEXT` — x=199 y=723 w=25 h=23  fill=#303030  text="􀁍"  font=SF Pro 20.289/590 lh=22.32 CENTER
+      - **Add Document** `TEXT` — x=232 y=725 w=117 h=19  fill=#303030  text="Add Document"  font=Inter 16/700 lh=19.20 RIGHT
+  - **Frame 7290** `FRAME` — x=12 y=703 w=62.9 h=62.9  r=60.8671  fill=#E6E6E6 a=0.20/#333333 a=0.30/#FFFFFF a=0.20/#FFFFFF a=0.31
+    - **􀊫** `TEXT` — x=15.93 y=706.61 w=54.78 h=54.78  fill=#303030  text="􀊫"  font=SF Pro 20.289/590 lh=22.32 CENTER
+- **Frame 2131332001** `FRAME` — x=18 y=59 w=115 h=38  HORIZONTAL gap=10 cross=CENTER
+  - **Frame 2131332000** `FRAME` — x=18 y=59 w=38 h=38  r=15.2  fill=#87E64C/GRADIENT_LINEAR(#87E64C,#A1FF67)
+    - **mdi:sign** `FRAME` — x=18 y=59 w=38 h=38
+      - **Vector** `VECTOR` — x=25.92 y=51.08 w=42.75 h=41.17  fill=#191919
+  - **Signica** `TEXT` — x=66 y=67 w=67 h=22  fill=#FFFFFF  text="Signica"  font=Inter 18/800 lh=21.60 LEFT
+- **Frame 2131332017** `FRAME` — x=28 y=197 w=150 h=224  VERTICAL gap=8 cross=CENTER
+  - **Frame 2131332016** `FRAME` — x=28 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `FRAME` — x=82 y=337 w=42 h=42  HORIZONTAL gap=2.5 pad(l,t,r,b)=4,4,4,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.75
+      - **Text** `TEXT` — x=89.5 y=345 w=27 h=26  fill=#000000/#6AD528  text="􀤑"  font=SF Pro Display 21.6364/500 lh=25.82 CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=387 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Document** `TEXT` — x=55 y=387 w=96 h=17  fill=#191919  text="Document"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=408 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=408 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332019** `FRAME` — x=28 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER  opacity=0.20
+  - **Frame 2131332016** `FRAME` — x=28 y=462 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=31 y=468.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=32.99 y=462 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Frame 2131332025** `FRAME` — x=140 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=55 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **New Resume** `TEXT` — x=55 y=652 w=96 h=17  fill=#191919  text="New Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=55 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=74 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332018** `FRAME` — x=197 y=197 w=150 h=241  VERTICAL gap=8 cross=CENTER  opacity=0.20
+  - **Frame 2131332016** `FRAME` — x=197 y=197 w=150 h=182
+    - **Frame 2131332015** `FRAME` — x=200 y=203.94 w=124.48 h=168.41  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0
+    - **Frame 2131332014** `FRAME` — x=201.99 y=197 w=144.18 h=182.29  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+  - **Frame 2131332005** `FRAME` — x=224 y=387 w=96 h=51  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Important Documents** `TEXT` — x=224 y=387 w=96 h=34  fill=#191919  text="Important Documents"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=425 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=425 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame 2131332020** `FRAME` — x=197 y=462 w=150 h=224  VERTICAL gap=8 cross=CENTER  opacity=0.20
+  - **Frame 2131332016** `FRAME` — x=197 y=462 w=150 h=182
+    - **Frame 2131332014** `FRAME` — x=210 y=469.22 w=123.72 h=167.84  r=12  fill=#FFFFFF/IMAGE  stroke=#DADADA a=0.59 w=1.0  fx=DROP_SHADOW #000000 a=0.08 dx=0 dy=4 blur=11.1 spread=0
+    - **Tab** `INSTANCE` — x=238 y=622 w=68 h=22  HORIZONTAL gap=2.5 pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=20  fill=#FFFFFF a=0.70
+      - **Text** `TEXT` — x=246 y=626 w=52 h=14  fill=#000000/#65E018  text="Signed"  font=Sora 14/600 lh=14.00 CENTER
+    - **Frame 2131332025** `FRAME` — x=309 y=462 w=38 h=38  HORIZONTAL gap=12.6667 cross=CENTER
+  - **Frame 2131332005** `FRAME` — x=224 y=652 w=96 h=34  VERTICAL gap=4 main=CENTER cross=CENTER
+    - **Resume** `TEXT` — x=224 y=652 w=96 h=17  fill=#191919  text="Resume"  font=Inter 14/700 lh=16.80 CENTER
+    - **Frame 2131331992** `FRAME` — x=224 y=673 w=96 h=13  HORIZONTAL gap=4 main=CENTER cross=CENTER
+      - **12.04.2025** `TEXT` — x=243 y=673 w=58 h=13  fill=#929292  text="12.04.2025"  font=Inter 11/400 lh=13.20 LEFT
+- **Frame** `FRAME` — x=22 y=411 w=250 h=137  VERTICAL
+  - **Menu - iPhone** `INSTANCE` — x=22 y=411 w=250 h=137  VERTICAL pad(l,t,r,b)=0,10,0,10 cross=CENTER
+    - **Liquid Glass - Regular - Medium** `INSTANCE` — x=22 y=411 w=250 h=137
+      - **Shadow** `FRAME` — x=-4 y=385 w=302 h=189
+        - **Mask** `INSTANCE` — x=-54 y=335 w=402 h=289  fill=#FFFFFF
+          - **Shape** `RECTANGLE` — x=22 y=411 w=250 h=137  r=34  fill=#000000
+        - **Blur** `FRAME` — x=22 y=416 w=250 h=137  r=34  fill=#000000 a=0.08  fx=BACKGROUND_BLUR r=80; LAYER_BLUR r=40
+      - **Fill** `FRAME` — x=22 y=411 w=250 h=137  r=34  fill=#262626/#F5F5F5 a=0.60
+      - **Glass Effect** `FRAME` — x=22 y=411 w=250 h=137  r=34  fill=#000000 a=0.00
+    - **Quick Actions** `FRAME` — x=22 y=421 w=250 h=56  HORIZONTAL gap=6 pad(l,t,r,b)=10,0,10,0 cross=CENTER
+      - **Action 2** `INSTANCE` — x=32 y=421 w=112 h=56  VERTICAL gap=4 pad(l,t,r,b)=4,6,4,6 cross=CENTER  r=20
+        - **Symbol** `TEXT` — x=36 y=427 w=104 h=22  fill=#333333  text="􀎛"  font=SF Pro 13/400 lh=15.00 CENTER
+        - **Label** `TEXT` — x=36 y=453 w=104 h=18  fill=#333333  text="Print"  font=Inter 12/600 lh=18.00 CENTER
+      - **Action 3** `INSTANCE` — x=150 y=421 w=112 h=56  VERTICAL gap=4 pad(l,t,r,b)=4,6,4,6 cross=CENTER  r=20
+        - **Symbol** `TEXT` — x=154 y=427 w=104 h=22  fill=#333333  text="􀈂"  font=SF Pro 13/590 lh=15.00 CENTER
+        - **Label** `TEXT` — x=154 y=453 w=104 h=18  fill=#333333  text="Share"  font=Inter 12/600 lh=18.00 CENTER
+    - **Menu Items** `FRAME` — x=22 y=477 w=250 h=61  VERTICAL pad(l,t,r,b)=16,0,16,0
+      - **Separator** `INSTANCE` — x=38 y=477 w=218 h=21  VERTICAL pad(l,t,r,b)=8,0,8,0 main=CENTER cross=CENTER
+        - **Separator** `FRAME` — x=46 y=487 w=202 h=1  fill=#E6E6E6
+      - **Item** `INSTANCE` — x=38 y=498 w=218 h=40  HORIZONTAL gap=4 pad(l,t,r,b)=8,0,8,0 cross=CENTER
+        - **Leading** `FRAME` — x=46 y=498 w=202 h=40  HORIZONTAL gap=8 cross=CENTER
+          - **Symbol** `TEXT` — x=46 y=508 w=28 h=20  fill=#FF383C  text="􀈑"  font=SF Pro 17/400 lh=20.00 ls=-0.43 CENTER
+          - **Label and Subtitle** `FRAME` — x=82 y=498 w=166 h=40  VERTICAL gap=2 pad(l,t,r,b)=0,10,0,10 main=CENTER
+            - **Label** `TEXT` — x=82 y=508 w=166 h=20  fill=#FF383C  text="Delete"  font=Inter 17/400 lh=20.00 ls=-0.43 LEFT
+- **Frame 2131331999** `FRAME` — x=0 y=113 w=375 h=72  r=[36.0, 36.0, 0.0, 0.0]  fill=#F0F0F0
+  - **Segmented control** `FRAME` — x=12 y=129 w=351 h=36  HORIZONTAL pad(l,t,r,b)=8,4,8,4 main=CENTER cross=CENTER  r=100  fill=#767680 a=0.12
+    - **Button 1** `FRAME` — x=20 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER  r=7
+      - **Button** `INSTANCE` — x=16 y=133 w=119 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER  r=20  fill=#FFFFFF  fx=DROP_SHADOW #000000 a=0.06 dx=0 dy=2 blur=20 spread=0
+      - **Label** `TEXT` — x=66.5 y=138 w=18 h=18  fill=#191919  text="All"  font=Inter 14/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=131 y=133 w=1 h=28  r=0.5  opacity=0.30
+    - **Button 2** `FRAME` — x=132 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 main=CENTER cross=CENTER
+      - **Label** `TEXT` — x=165 y=138 w=45 h=18  fill=#191919 a=0.40  text="Signed"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
+    - **Separator** `RECTANGLE` — x=243 y=133 w=1 h=28  r=0.5  fill=#8E8E93  opacity=0.30
+    - **Button 3** `FRAME` — x=244 y=133 w=111 h=28  HORIZONTAL pad(l,t,r,b)=10,3,10,3 cross=CENTER
+      - **Label** `TEXT` — x=254 y=138 w=91 h=18  fill=#191919 a=0.40  text="Unsigned"  font=Inter 13/700 lh=18.00 ls=-0.08 CENTER
