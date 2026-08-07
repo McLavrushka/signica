@@ -1,0 +1,38 @@
+{
+  "app": {
+    "title": "Signica"
+  },
+  "filters": {
+    "all": "All",
+    "signed": "Signed",
+    "unsigned": "Unsigned"
+  },
+  "documents": {
+    "default_name": "New Document",
+    "signed_badge": "Signed",
+    "empty_title": "No Documents Yet",
+    "empty_subtitle": "Your can add documents from",
+    "search_hint": "Search Documents"
+  },
+  "sources": {
+    "sheet_title": "Add Document From",
+    "files": "Files",
+    "photos": "Photos",
+    "scanner": "Scanner"
+  },
+  "actions": {
+    "add_document": "Add Document",
+    "select": "Select",
+    "select_all": "Select All",
+    "deselect_all": "Deselect All ({count})",
+    "delete": "Delete",
+    "share": "Share",
+    "print": "Print",
+    "confirm": "OK"
+  },
+  "errors": {
+    "import_failed": "Could not add the document",
+    "delete_failed": "Could not delete the document",
+    "permission_denied": "Access denied. Allow it in Settings to continue."
+  }
+}
