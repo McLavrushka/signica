@@ -39,5 +39,13 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
+
+    # permission_handler (pulled in by cunning_document_scanner) compiles all
+    # permission handlers out by default; camera must be opted in explicitly
+    # or Permission.camera.request() returns denied without ever prompting.
+    target.build_configurations.each do |config|
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'PERMISSION_CAMERA=1'
+    end
   end
 end

@@ -1,5 +1,7 @@
 import 'dart:io' show FileSystemException;
 
+import 'package:cunning_document_scanner/cunning_document_scanner.dart'
+    show CunningDocumentScannerException;
 import 'package:flutter/services.dart' show PlatformException;
 import 'package:injectable/injectable.dart';
 import 'package:signica/core/failure.dart';
@@ -86,7 +88,7 @@ class DocumentImportServiceImpl implements DocumentImportService {
     'photo_access_denied',
     'camera_access_denied',
     // cunning_document_scanner, which needs the camera to scan.
-    'PERMISSION_DENIED',
+    'permission_denied',
   };
 
   /// Classification by type, not by text.
@@ -101,6 +103,9 @@ class DocumentImportServiceImpl implements DocumentImportService {
     FileSystemException() => StorageFailure(cause: error),
     PlatformException(:final String code)
         when _accessDeniedCodes.contains(code) =>
+      PermissionDenied(cause: error),
+    CunningDocumentScannerException(:final String? code)
+        when code != null && _accessDeniedCodes.contains(code) =>
       PermissionDenied(cause: error),
     // Deliberately not StorageFailure: an unrecognised error is unknown, and
     // saying otherwise in the log helps nobody. The UI shows both the same.
