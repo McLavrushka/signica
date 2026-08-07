@@ -30,6 +30,8 @@
 	<string>Signica uses the camera to scan paper documents and turn them into PDFs.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Signica needs access to your photos to build documents from images you choose.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Signica needs permission to save scanned pages while building your document.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
