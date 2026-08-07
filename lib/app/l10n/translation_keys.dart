@@ -12,7 +12,6 @@ abstract final class TranslationKeys {
   static const String documentsEmptyTitle = 'documents.empty_title';
   static const String documentsEmptySubtitle = 'documents.empty_subtitle';
   static const String documentsSearchHint = 'documents.search_hint';
-  static const String documentsSelectedCount = 'documents.selected_count';
 
   static const String sourceSheetTitle = 'sources.sheet_title';
   static const String sourceFiles = 'sources.files';
@@ -26,6 +25,7 @@ abstract final class TranslationKeys {
   static const String actionDelete = 'actions.delete';
   static const String actionShare = 'actions.share';
   static const String actionPrint = 'actions.print';
+  static const String actionConfirm = 'actions.confirm';
 
   static const String errorImportFailed = 'errors.import_failed';
   static const String errorDeleteFailed = 'errors.delete_failed';

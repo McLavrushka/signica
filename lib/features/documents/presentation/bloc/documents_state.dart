@@ -1,6 +1,6 @@
 part of 'documents_bloc.dart';
 
-enum DocumentsStatus { initial, loading, ready, failure }
+enum DocumentsStatus { initial, loading, ready }
 
 class DocumentsState extends Equatable {
   const DocumentsState({

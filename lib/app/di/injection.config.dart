@@ -16,6 +16,8 @@ import 'package:signica/app/di/injection.dart' as _i790;
 import 'package:signica/app/router/app_router.dart' as _i149;
 import 'package:signica/features/documents/data/db/app_database.dart' as _i897;
 import 'package:signica/features/documents/data/db/documents_dao.dart' as _i59;
+import 'package:signica/features/documents/data/repositories/document_exporter_impl.dart'
+    as _i696;
 import 'package:signica/features/documents/data/repositories/document_import_service_impl.dart'
     as _i465;
 import 'package:signica/features/documents/data/repositories/documents_repository_impl.dart'
@@ -26,6 +28,8 @@ import 'package:signica/features/documents/data/sources/file_storage.dart'
     as _i646;
 import 'package:signica/features/documents/data/sources/pdf_processor.dart'
     as _i169;
+import 'package:signica/features/documents/domain/repositories/document_exporter.dart'
+    as _i713;
 import 'package:signica/features/documents/domain/repositories/document_import_service.dart'
     as _i713;
 import 'package:signica/features/documents/domain/repositories/documents_repository.dart'
@@ -34,8 +38,12 @@ import 'package:signica/features/documents/domain/use_cases/delete_documents.dar
     as _i27;
 import 'package:signica/features/documents/domain/use_cases/import_document.dart'
     as _i51;
+import 'package:signica/features/documents/domain/use_cases/print_document.dart'
+    as _i812;
 import 'package:signica/features/documents/domain/use_cases/resolve_document_name.dart'
     as _i1072;
+import 'package:signica/features/documents/domain/use_cases/share_documents.dart'
+    as _i219;
 import 'package:signica/features/documents/domain/use_cases/toggle_signature.dart'
     as _i614;
 import 'package:signica/features/documents/domain/use_cases/watch_documents.dart'
@@ -60,11 +68,20 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i706.Uuid>(() => appModule.uuid);
     gh.lazySingleton<_i149.AppRouter>(() => _i149.AppRouter());
     gh.lazySingleton<_i646.FileStorage>(() => _i646.FileStorage());
+    gh.lazySingleton<_i713.DocumentExporter>(
+      () => const _i696.DocumentExporterImpl(),
+    );
     gh.lazySingleton<_i571.DocumentPicker>(
       () => _i571.DocumentPicker(gh<_i183.ImagePicker>()),
     );
     gh.lazySingleton<_i169.PdfProcessor>(
       () => _i169.PdfProcessor(gh<_i646.FileStorage>()),
+    );
+    gh.factory<_i812.PrintDocument>(
+      () => _i812.PrintDocument(gh<_i713.DocumentExporter>()),
+    );
+    gh.factory<_i219.ShareDocuments>(
+      () => _i219.ShareDocuments(gh<_i713.DocumentExporter>()),
     );
     gh.lazySingleton<_i59.DocumentsDao>(
       () => _i59.DocumentsDao(gh<_i897.AppDatabase>()),
@@ -105,6 +122,8 @@ extension GetItInjectableX on _i174.GetIt {
         gh<_i51.ImportDocument>(),
         gh<_i614.ToggleSignature>(),
         gh<_i27.DeleteDocuments>(),
+        gh<_i219.ShareDocuments>(),
+        gh<_i812.PrintDocument>(),
       ),
     );
     return this;

@@ -7,8 +7,6 @@ sealed class DocumentsEvent extends Equatable {
   List<Object?> get props => <Object?>[];
 }
 
-/// Subscribes to the repository stream for the current query and filter.
-/// Re-added whenever either of them changes.
 final class DocumentsSubscribed extends DocumentsEvent {
   const DocumentsSubscribed();
 }
@@ -31,7 +29,6 @@ final class DocumentsFilterChanged extends DocumentsEvent {
   List<Object?> get props => <Object?>[filter];
 }
 
-/// Runs the whole pick → store → persist flow for [source].
 final class DocumentImportRequested extends DocumentsEvent {
   const DocumentImportRequested({
     required this.source,
@@ -65,12 +62,29 @@ final class DocumentsDeleted extends DocumentsEvent {
   List<Object?> get props => <Object?>[ids];
 }
 
-/// Emitted internally when the repository stream produces a new list.
-final class _DocumentsReceived extends DocumentsEvent {
-  const _DocumentsReceived(this.documents);
+final class DocumentsShared extends DocumentsEvent {
+  const DocumentsShared(this.documents);
 
   final List<Document> documents;
 
   @override
   List<Object?> get props => <Object?>[documents];
+}
+
+final class DocumentPrinted extends DocumentsEvent {
+  const DocumentPrinted(this.document);
+
+  final Document document;
+
+  @override
+  List<Object?> get props => <Object?>[document];
+}
+
+final class _DocumentsReceived extends DocumentsEvent {
+  const _DocumentsReceived(this.result);
+
+  final Result<List<Document>> result;
+
+  @override
+  List<Object?> get props => <Object?>[result];
 }

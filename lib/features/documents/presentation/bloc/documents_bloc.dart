@@ -11,17 +11,16 @@ import 'package:signica/features/documents/domain/entities/document_source.dart'
 import 'package:signica/features/documents/domain/entities/documents_filter.dart';
 import 'package:signica/features/documents/domain/use_cases/delete_documents.dart';
 import 'package:signica/features/documents/domain/use_cases/import_document.dart';
+import 'package:signica/features/documents/domain/use_cases/print_document.dart';
+import 'package:signica/features/documents/domain/use_cases/share_documents.dart';
 import 'package:signica/features/documents/domain/use_cases/toggle_signature.dart';
 import 'package:signica/features/documents/domain/use_cases/watch_documents.dart';
 
 part 'documents_event.dart';
 part 'documents_state.dart';
 
-/// Owns everything about *what* is on screen: the document list, the active
-/// query and filter, and the import lifecycle.
-///
-/// It deliberately does not own how the search bar animates or whether it is
-/// open — that is presentation-only state and lives in the widget.
+/// Owns the document list, active query/filter, and import lifecycle.
+/// Search bar UI state (open/closed, animation) lives in the widget instead.
 @injectable
 class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
   DocumentsBloc(
@@ -29,6 +28,8 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
     this._importDocument,
     this._toggleSignature,
     this._deleteDocuments,
+    this._shareDocuments,
+    this._printDocument,
   ) : super(const DocumentsState()) {
     on<DocumentsSubscribed>(_onSubscribed, transformer: restartable());
     on<DocumentsQueryChanged>(
@@ -37,8 +38,24 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
     );
     on<DocumentsFilterChanged>(_onFilterChanged);
     on<DocumentImportRequested>(_onImportRequested, transformer: droppable());
-    on<DocumentSignatureToggled>(_onSignatureToggled);
-    on<DocumentsDeleted>(_onDeleted);
+    on<DocumentSignatureToggled>(
+      (DocumentSignatureToggled event, Emitter<DocumentsState> emit) =>
+          _reportFailure(emit, _toggleSignature(event.document)),
+    );
+    on<DocumentsDeleted>(
+      (DocumentsDeleted event, Emitter<DocumentsState> emit) =>
+          _reportFailure(emit, _deleteDocuments(event.ids)),
+    );
+    on<DocumentsShared>(
+      (DocumentsShared event, Emitter<DocumentsState> emit) =>
+          _reportFailure(emit, _shareDocuments(event.documents)),
+      transformer: droppable(),
+    );
+    on<DocumentPrinted>(
+      (DocumentPrinted event, Emitter<DocumentsState> emit) =>
+          _reportFailure(emit, _printDocument(event.document)),
+      transformer: droppable(),
+    );
     on<_DocumentsReceived>(_onReceived);
   }
 
@@ -48,6 +65,8 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
   final ImportDocument _importDocument;
   final ToggleSignature _toggleSignature;
   final DeleteDocuments _deleteDocuments;
+  final ShareDocuments _shareDocuments;
+  final PrintDocument _printDocument;
 
   Future<void> _onSubscribed(
     DocumentsSubscribed event,
@@ -59,19 +78,24 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
 
     // `restartable` cancels the previous subscription, so changing the query
     // or the filter simply re-runs this handler.
-    await emit.onEach<List<Document>>(
+    await emit.onEach<Result<List<Document>>>(
       _watchDocuments(
         WatchDocumentsParams(query: state.query, filter: state.filter),
       ),
-      onData: (List<Document> documents) => add(_DocumentsReceived(documents)),
+      onData: (Result<List<Document>> result) =>
+          add(_DocumentsReceived(result)),
     );
   }
 
   void _onReceived(_DocumentsReceived event, Emitter<DocumentsState> emit) {
     emit(
-      state.copyWith(
-        status: DocumentsStatus.ready,
-        documents: event.documents,
+      event.result.fold(
+        ok: (List<Document> documents) =>
+            state.copyWith(status: DocumentsStatus.ready, documents: documents),
+        // The list already on screen stays: a query that failed to reload is
+        // still better than a grid that empties itself under the error.
+        err: (Failure failure) =>
+            state.copyWith(status: DocumentsStatus.ready, failure: failure),
       ),
     );
   }
@@ -118,29 +142,19 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
     );
   }
 
-  Future<void> _onSignatureToggled(
-    DocumentSignatureToggled event,
+  /// Runs a use case whose only visible outcome is failure; success refreshes
+  /// through the drift stream instead of an emit.
+  Future<void> _reportFailure(
     Emitter<DocumentsState> emit,
+    Future<Result<void>> action,
   ) async {
-    final Result<void> result = await _toggleSignature(event.document);
-    // The list itself refreshes through the drift stream.
+    final Result<void> result = await action;
     if (result.failureOrNull case final Failure failure) {
       emit(state.copyWith(failure: failure));
     }
   }
 
-  Future<void> _onDeleted(
-    DocumentsDeleted event,
-    Emitter<DocumentsState> emit,
-  ) async {
-    final Result<void> result = await _deleteDocuments(event.ids);
-    if (result.failureOrNull case final Failure failure) {
-      emit(state.copyWith(failure: failure));
-    }
-  }
-
-  /// Debounce keystrokes, then behave like `restartable` so only the last
-  /// query survives.
+  /// Debounces keystrokes, then keeps only the last query via `restartable`.
   static EventTransformer<T> _debounce<T>(Duration duration) =>
       (Stream<T> events, EventMapper<T> mapper) =>
           restartable<T>().call(events.debounce(duration), mapper);
