@@ -8,6 +8,8 @@ import 'package:signica/features/documents/domain/entities/document_source.dart'
 import 'package:signica/features/documents/domain/entities/documents_filter.dart';
 import 'package:signica/features/documents/domain/use_cases/delete_documents.dart';
 import 'package:signica/features/documents/domain/use_cases/import_document.dart';
+import 'package:signica/features/documents/domain/use_cases/print_document.dart';
+import 'package:signica/features/documents/domain/use_cases/share_documents.dart';
 import 'package:signica/features/documents/domain/use_cases/toggle_signature.dart';
 import 'package:signica/features/documents/domain/use_cases/watch_documents.dart';
 import 'package:signica/features/documents/presentation/bloc/documents_bloc.dart';
@@ -19,6 +21,10 @@ class _MockImportDocument extends Mock implements ImportDocument {}
 class _MockToggleSignature extends Mock implements ToggleSignature {}
 
 class _MockDeleteDocuments extends Mock implements DeleteDocuments {}
+
+class _MockShareDocuments extends Mock implements ShareDocuments {}
+
+class _MockPrintDocument extends Mock implements PrintDocument {}
 
 final Document _document = Document(
   id: '1',
@@ -34,6 +40,8 @@ void main() {
   late _MockImportDocument importDocument;
   late _MockToggleSignature toggleSignature;
   late _MockDeleteDocuments deleteDocuments;
+  late _MockShareDocuments shareDocuments;
+  late _MockPrintDocument printDocument;
 
   setUpAll(() {
     registerFallbackValue(const WatchDocumentsParams());
@@ -44,6 +52,7 @@ void main() {
       ),
     );
     registerFallbackValue(_document);
+    registerFallbackValue(<Document>[_document]);
   });
 
   setUp(() {
@@ -51,9 +60,13 @@ void main() {
     importDocument = _MockImportDocument();
     toggleSignature = _MockToggleSignature();
     deleteDocuments = _MockDeleteDocuments();
+    shareDocuments = _MockShareDocuments();
+    printDocument = _MockPrintDocument();
 
     when(() => watchDocuments(any())).thenAnswer(
-      (_) => Stream<List<Document>>.value(<Document>[_document]),
+      (_) => Stream<Result<List<Document>>>.value(
+        Ok<List<Document>>(<Document>[_document]),
+      ),
     );
   });
 
@@ -62,6 +75,8 @@ void main() {
     importDocument,
     toggleSignature,
     deleteDocuments,
+    shareDocuments,
+    printDocument,
   );
 
   group('subscription', () {
@@ -81,11 +96,9 @@ void main() {
               'status',
               DocumentsStatus.ready,
             )
-            .having(
-              (DocumentsState s) => s.documents,
-              'documents',
-              <Document>[_document],
-            ),
+            .having((DocumentsState s) => s.documents, 'documents', <Document>[
+              _document,
+            ]),
       ],
     );
   });
@@ -102,9 +115,9 @@ void main() {
       },
       wait: const Duration(milliseconds: 400),
       verify: (_) {
-        final List<WatchDocumentsParams> calls =
-            verify(() => watchDocuments(captureAny())).captured
-                .cast<WatchDocumentsParams>();
+        final List<WatchDocumentsParams> calls = verify(
+          () => watchDocuments(captureAny()),
+        ).captured.cast<WatchDocumentsParams>();
         expect(calls.single.query, 'res');
       },
     );
@@ -127,9 +140,9 @@ void main() {
           bloc.add(const DocumentsFilterChanged(DocumentsFilter.signed)),
       wait: const Duration(milliseconds: 50),
       verify: (_) {
-        final List<WatchDocumentsParams> calls =
-            verify(() => watchDocuments(captureAny())).captured
-                .cast<WatchDocumentsParams>();
+        final List<WatchDocumentsParams> calls = verify(
+          () => watchDocuments(captureAny()),
+        ).captured.cast<WatchDocumentsParams>();
         expect(calls.last.filter, DocumentsFilter.signed);
       },
     );
@@ -140,9 +153,9 @@ void main() {
       'flags the import while it runs and clears it afterwards',
       build: build,
       setUp: () {
-        when(() => importDocument(any())).thenAnswer(
-          (_) async => Ok<Document>(_document),
-        );
+        when(
+          () => importDocument(any()),
+        ).thenAnswer((_) async => Ok<Document>(_document));
       },
       act: (DocumentsBloc bloc) => bloc.add(
         const DocumentImportRequested(
@@ -166,9 +179,9 @@ void main() {
       'treats a cancelled picker as a non-error',
       build: build,
       setUp: () {
-        when(() => importDocument(any())).thenAnswer(
-          (_) async => const Err<Document>(PickerCancelled()),
-        );
+        when(
+          () => importDocument(any()),
+        ).thenAnswer((_) async => const Err<Document>(PickerCancelled()));
       },
       act: (DocumentsBloc bloc) => bloc.add(
         const DocumentImportRequested(
@@ -192,9 +205,9 @@ void main() {
       'surfaces a real import failure',
       build: build,
       setUp: () {
-        when(() => importDocument(any())).thenAnswer(
-          (_) async => const Err<Document>(PdfFailure()),
-        );
+        when(
+          () => importDocument(any()),
+        ).thenAnswer((_) async => const Err<Document>(PdfFailure()));
       },
       act: (DocumentsBloc bloc) => bloc.add(
         const DocumentImportRequested(
@@ -243,14 +256,49 @@ void main() {
     );
   });
 
+  group('export', () {
+    blocTest<DocumentsBloc, DocumentsState>(
+      'sends the selected documents to the share sheet',
+      build: build,
+      setUp: () {
+        when(
+          () => shareDocuments(any()),
+        ).thenAnswer((_) async => const Ok<void>(null));
+      },
+      act: (DocumentsBloc bloc) =>
+          bloc.add(DocumentsShared(<Document>[_document])),
+      expect: () => <DocumentsState>[],
+      verify: (_) =>
+          verify(() => shareDocuments(<Document>[_document])).called(1),
+    );
+
+    blocTest<DocumentsBloc, DocumentsState>(
+      'reports a failed print',
+      build: build,
+      setUp: () {
+        when(
+          () => printDocument(any()),
+        ).thenAnswer((_) async => const Err<void>(PdfFailure()));
+      },
+      act: (DocumentsBloc bloc) => bloc.add(DocumentPrinted(_document)),
+      expect: () => <Matcher>[
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.failure,
+          'failure',
+          isA<PdfFailure>(),
+        ),
+      ],
+    );
+  });
+
   group('signature', () {
     blocTest<DocumentsBloc, DocumentsState>(
       'delegates the toggle and stays quiet on success',
       build: build,
       setUp: () {
-        when(() => toggleSignature(any())).thenAnswer(
-          (_) async => const Ok<void>(null),
-        );
+        when(
+          () => toggleSignature(any()),
+        ).thenAnswer((_) async => const Ok<void>(null));
       },
       act: (DocumentsBloc bloc) =>
           bloc.add(DocumentSignatureToggled(_document)),
@@ -262,9 +310,9 @@ void main() {
       'reports a failed toggle',
       build: build,
       setUp: () {
-        when(() => toggleSignature(any())).thenAnswer(
-          (_) async => const Err<void>(DatabaseFailure()),
-        );
+        when(
+          () => toggleSignature(any()),
+        ).thenAnswer((_) async => const Err<void>(DatabaseFailure()));
       },
       act: (DocumentsBloc bloc) =>
           bloc.add(DocumentSignatureToggled(_document)),
@@ -275,6 +323,131 @@ void main() {
           isA<DatabaseFailure>(),
         ),
       ],
+    );
+  });
+
+  group('deletion', () {
+    blocTest<DocumentsBloc, DocumentsState>(
+      'delegates the ids and stays quiet on success',
+      build: build,
+      setUp: () {
+        when(
+          () => deleteDocuments(any()),
+        ).thenAnswer((_) async => const Ok<void>(null));
+      },
+      act: (DocumentsBloc bloc) =>
+          bloc.add(const DocumentsDeleted(<String>['1', '2'])),
+      // Nothing to emit: the grid reloads through the drift stream.
+      expect: () => <DocumentsState>[],
+      verify: (_) =>
+          verify(() => deleteDocuments(<String>['1', '2'])).called(1),
+    );
+
+    blocTest<DocumentsBloc, DocumentsState>(
+      'reports a failed delete',
+      build: build,
+      setUp: () {
+        when(
+          () => deleteDocuments(any()),
+        ).thenAnswer((_) async => const Err<void>(StorageFailure()));
+      },
+      act: (DocumentsBloc bloc) =>
+          bloc.add(const DocumentsDeleted(<String>['1'])),
+      expect: () => <Matcher>[
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.failure,
+          'failure',
+          isA<StorageFailure>(),
+        ),
+      ],
+    );
+  });
+
+  group('stream failures', () {
+    // Expressible only because the repository hands failures back in the
+    // stream instead of throwing past the bloc.
+    blocTest<DocumentsBloc, DocumentsState>(
+      'a database error in the list reaches the state',
+      build: build,
+      setUp: () {
+        when(() => watchDocuments(any())).thenAnswer(
+          (_) => Stream<Result<List<Document>>>.value(
+            const Err<List<Document>>(DatabaseFailure()),
+          ),
+        );
+      },
+      act: (DocumentsBloc bloc) => bloc.add(const DocumentsSubscribed()),
+      expect: () => <Matcher>[
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.status,
+          'status',
+          DocumentsStatus.loading,
+        ),
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.failure,
+          'failure',
+          isA<DatabaseFailure>(),
+        ),
+      ],
+    );
+
+    // A failed reload must not blank the grid the user is looking at.
+    blocTest<DocumentsBloc, DocumentsState>(
+      'the documents already on screen survive the error',
+      build: build,
+      seed: () => DocumentsState(
+        status: DocumentsStatus.ready,
+        documents: <Document>[_document],
+      ),
+      setUp: () {
+        when(() => watchDocuments(any())).thenAnswer(
+          (_) => Stream<Result<List<Document>>>.value(
+            const Err<List<Document>>(DatabaseFailure()),
+          ),
+        );
+      },
+      act: (DocumentsBloc bloc) => bloc.add(const DocumentsSubscribed()),
+      expect: () => <Matcher>[
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.documents,
+          'documents',
+          <Document>[_document],
+        ),
+      ],
+    );
+  });
+
+  group('export failures', () {
+    blocTest<DocumentsBloc, DocumentsState>(
+      'reports a failed share',
+      build: build,
+      setUp: () {
+        when(
+          () => shareDocuments(any()),
+        ).thenAnswer((_) async => const Err<void>(StorageFailure()));
+      },
+      act: (DocumentsBloc bloc) =>
+          bloc.add(DocumentsShared(<Document>[_document])),
+      expect: () => <Matcher>[
+        isA<DocumentsState>().having(
+          (DocumentsState s) => s.failure,
+          'failure',
+          isA<StorageFailure>(),
+        ),
+      ],
+    );
+
+    blocTest<DocumentsBloc, DocumentsState>(
+      'a successful print says nothing',
+      build: build,
+      setUp: () {
+        when(
+          () => printDocument(any()),
+        ).thenAnswer((_) async => const Ok<void>(null));
+      },
+      act: (DocumentsBloc bloc) => bloc.add(DocumentPrinted(_document)),
+      expect: () => <DocumentsState>[],
+      verify: (_) => verify(() => printDocument(_document)).called(1),
     );
   });
 }

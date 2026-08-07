@@ -60,9 +60,7 @@ void main() {
     await dao.insertRow(row('1', 'Rental Agreement'));
     await dao.insertRow(row('2', 'Resume'));
 
-    final List<DocumentRow> rows = await dao
-        .watch(query: 'rent')
-        .first;
+    final List<DocumentRow> rows = await dao.watch(query: 'rent').first;
 
     expect(rows.single.name, 'Rental Agreement');
   });
@@ -84,10 +82,7 @@ void main() {
     await dao.insertRow(row('1', 'Resume'));
     await dao.insertRow(row('2', 'Resume 2'));
 
-    expect(
-      (await dao.allNames())..sort(),
-      <String>['Resume', 'Resume 2'],
-    );
+    expect((await dao.allNames())..sort(), <String>['Resume', 'Resume 2']);
   });
 
   test('deleteByIds removes the rows', () async {
