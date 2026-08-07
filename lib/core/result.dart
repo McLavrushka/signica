@@ -12,13 +12,6 @@ sealed class Result<T> {
 
   const factory Result.err(Failure failure) = Err<T>;
 
-  bool get isOk => this is Ok<T>;
-
-  T? get valueOrNull => switch (this) {
-    Ok<T>(:final T value) => value,
-    Err<T>() => null,
-  };
-
   Failure? get failureOrNull => switch (this) {
     Ok<T>() => null,
     Err<T>(:final Failure failure) => failure,
@@ -31,12 +24,6 @@ sealed class Result<T> {
   }) => switch (this) {
     Ok<T>(:final T value) => ok(value),
     Err<T>(:final Failure failure) => err(failure),
-  };
-
-  /// Maps the success value, passing the failure through untouched.
-  Result<R> map<R>(R Function(T value) transform) => switch (this) {
-    Ok<T>(:final T value) => Ok<R>(transform(value)),
-    Err<T>(:final Failure failure) => Err<R>(failure),
   };
 }
 

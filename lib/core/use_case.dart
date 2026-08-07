@@ -12,8 +12,3 @@ abstract interface class StreamUseCase<Out, In> {
 abstract interface class SyncUseCase<Out, In> {
   Out call(In params);
 }
-
-/// Marker for use cases that take no arguments.
-final class NoParams {
-  const NoParams();
-}
