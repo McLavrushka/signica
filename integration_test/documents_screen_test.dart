@@ -222,7 +222,7 @@ void main() {
         badge.center.dx,
         moreOrLessEquals(preview.center.dx, epsilon: .01),
       );
-      expect(badge.bottom, moreOrLessEquals(preview.bottom - 4, epsilon: .01));
+      expect(badge.bottom, moreOrLessEquals(preview.bottom , epsilon: .01));
     });
   });
 

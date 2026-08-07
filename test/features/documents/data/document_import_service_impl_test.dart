@@ -87,6 +87,16 @@ void main() {
       );
     });
 
+    /// A photo kept only in iCloud comes back as `invalid_image` with the
+    /// library already authorised. Reporting that as unclassified hid a case
+    /// with an obvious cause behind "something went wrong".
+    test('an image the OS could not hand over is a storage problem', () async {
+      expect(
+        await pickThrowing(PlatformException(code: 'invalid_image')),
+        isA<StorageFailure>(),
+      );
+    });
+
     test('an unrelated platform error is not a permission problem', () async {
       expect(
         await pickThrowing(PlatformException(code: 'multiple_request')),

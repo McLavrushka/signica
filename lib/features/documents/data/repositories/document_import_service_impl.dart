@@ -91,6 +91,17 @@ class DocumentImportServiceImpl implements DocumentImportService {
     'permission_denied',
   };
 
+  /// Codes for a source the OS granted us but could not hand over. The common
+  /// one is a photo that lives only in iCloud under "Optimise iPhone Storage":
+  /// the library is readable, the picker returns, and the download behind it
+  /// fails. That is a storage problem, not an unknown one.
+  static const Set<String> _unreadableSourceCodes = <String>{
+    // image_picker: the item provider produced no data.
+    'invalid_image',
+    // image_picker: the chosen item is neither an image nor a video.
+    'invalid_source',
+  };
+
   /// Classification by type, not by text.
   ///
   /// The previous version searched `error.toString()` for `'permission'`,
@@ -104,6 +115,9 @@ class DocumentImportServiceImpl implements DocumentImportService {
     PlatformException(:final String code)
         when _accessDeniedCodes.contains(code) =>
       PermissionDenied(cause: error),
+    PlatformException(:final String code)
+        when _unreadableSourceCodes.contains(code) =>
+      StorageFailure(cause: error),
     CunningDocumentScannerException(:final String? code)
         when code != null && _accessDeniedCodes.contains(code) =>
       PermissionDenied(cause: error),

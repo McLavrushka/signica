@@ -58,7 +58,19 @@ class PdfProcessor {
     final pw.Document doc = pw.Document();
 
     for (final String path in imagePaths) {
-      final Uint8List bytes = await File(path).readAsBytes();
+      final File file = File(path);
+      // The scanner plugin writes its pages with `try?` and returns the paths
+      // either way, so a failed write (a full disk, most often) reaches us as a
+      // path to nothing. Reported here, while the file name is still known,
+      // instead of as an opaque read error further down.
+      if (!await file.exists()) {
+        throw PathNotFoundException(
+          path,
+          const OSError('scanned page was never written'),
+        );
+      }
+
+      final Uint8List bytes = await file.readAsBytes();
       final pw.MemoryImage image = pw.MemoryImage(bytes);
       doc.addPage(
         pw.Page(
@@ -70,7 +82,9 @@ class PdfProcessor {
       );
     }
 
-    await _storage.writeBytes(targetPath, Uint8List.fromList(await doc.save()));
+    // `save()` already returns a `Uint8List`; copying it held a second full
+    // document in memory at the moment the first one was still alive.
+    await _storage.writeBytes(targetPath, await doc.save());
   }
 
   /// Renders the first page — and the last one, when the document has more
