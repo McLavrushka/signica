@@ -18,6 +18,7 @@ const String _base = '/container/Documents';
 DocumentRow _row({String? lastPreview}) => DocumentRow(
   id: '1',
   name: 'Contract',
+  nameFolded: 'contract',
   filePath: 'documents/1.pdf',
   firstPagePreviewPath: 'previews/1-first.png',
   lastPagePreviewPath: lastPreview,

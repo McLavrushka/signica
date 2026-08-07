@@ -17,7 +17,6 @@ class SignedBadge extends StatelessWidget {
   const SignedBadge({super.key});
 
   /// Distance the badge keeps from the bottom of the preview box.
-  static const double bottomInset = 4;
 
   @override
   Widget build(BuildContext context) {
