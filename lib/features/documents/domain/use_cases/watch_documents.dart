@@ -1,4 +1,5 @@
 import 'package:injectable/injectable.dart';
+import 'package:signica/core/result.dart';
 import 'package:signica/core/use_case.dart';
 import 'package:signica/features/documents/domain/entities/document.dart';
 import 'package:signica/features/documents/domain/entities/documents_filter.dart';
@@ -18,12 +19,12 @@ class WatchDocumentsParams {
 /// The grid's source of truth: a live, filtered list of documents.
 @injectable
 class WatchDocuments
-    implements StreamUseCase<List<Document>, WatchDocumentsParams> {
+    implements StreamUseCase<Result<List<Document>>, WatchDocumentsParams> {
   const WatchDocuments(this._repository);
 
   final DocumentsRepository _repository;
 
   @override
-  Stream<List<Document>> call(WatchDocumentsParams params) =>
+  Stream<Result<List<Document>>> call(WatchDocumentsParams params) =>
       _repository.watch(query: params.query, filter: params.filter);
 }

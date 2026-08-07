@@ -37,18 +37,23 @@ class Document extends Equatable {
   /// Multi-page documents are drawn as a stack of two sheets in the grid.
   bool get hasBackPage => lastPagePreviewPath != null && pageCount > 1;
 
-  Document copyWith({
-    String? name,
-    bool? isSigned,
+  /// Returns the same document with its file paths swapped.
+  ///
+  /// Used by the data layer, which stores paths relative to the app documents
+  /// directory and resolves them when reading.
+  Document withResolvedPaths({
+    required String filePath,
+    required String firstPagePreviewPath,
+    String? lastPagePreviewPath,
   }) => Document(
     id: id,
-    name: name ?? this.name,
+    name: name,
     filePath: filePath,
     firstPagePreviewPath: firstPagePreviewPath,
     lastPagePreviewPath: lastPagePreviewPath,
     pageCount: pageCount,
     createdAt: createdAt,
-    isSigned: isSigned ?? this.isSigned,
+    isSigned: isSigned,
   );
 
   @override

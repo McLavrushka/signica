@@ -13,10 +13,7 @@ import 'package:uuid/uuid.dart';
 
 /// Parameters for [ImportDocument].
 class ImportDocumentParams {
-  const ImportDocumentParams({
-    required this.source,
-    required this.defaultName,
-  });
+  const ImportDocumentParams({required this.source, required this.defaultName});
 
   final DocumentSource source;
 
@@ -30,7 +27,8 @@ class ImportDocumentParams {
 /// The whole add-document flow in one place; the bloc only decides *when* it
 /// runs, never *how*.
 @injectable
-class ImportDocument implements UseCase<Result<Document>, ImportDocumentParams> {
+class ImportDocument
+    implements UseCase<Result<Document>, ImportDocumentParams> {
   const ImportDocument(
     this._importService,
     this._repository,
@@ -45,35 +43,45 @@ class ImportDocument implements UseCase<Result<Document>, ImportDocumentParams> 
 
   @override
   Future<Result<Document>> call(ImportDocumentParams params) async {
-    final Result<PickedSource> picked = await _importService.pick(
-      params.source,
-    );
-    if (picked case Err<PickedSource>(:final Failure failure)) {
-      return Err<Document>(failure);
+    // Each step unwraps by pattern rather than by cast: the switch is
+    // exhaustive over the two cases of `Result`, so a missed branch is a
+    // compile error instead of a run-time `as`.
+    final PickedSource source;
+    switch (await _importService.pick(params.source)) {
+      case Err<PickedSource>(:final Failure failure):
+        return Err<Document>(failure);
+      case Ok<PickedSource>(:final PickedSource value):
+        source = value;
     }
-    final PickedSource source = (picked as Ok<PickedSource>).value;
 
     final String desiredName = switch (source) {
       PickedPdf(:final String originalName) => originalName,
       PickedImages() => params.defaultName,
     };
 
+    final List<String> existingNames;
+    switch (await _repository.allNames()) {
+      case Err<List<String>>(:final Failure failure):
+        return Err<Document>(failure);
+      case Ok<List<String>>(:final List<String> value):
+        existingNames = value;
+    }
+
     final String name = _resolveName(
       ResolveDocumentNameParams(
         desiredName: desiredName,
-        existingNames: await _repository.allNames(),
+        existingNames: existingNames,
       ),
     );
 
     final String id = _uuid.v4();
-    final Result<StoredPdf> stored = await _importService.store(
-      picked: source,
-      documentId: id,
-    );
-    if (stored case Err<StoredPdf>(:final Failure failure)) {
-      return Err<Document>(failure);
+    final StoredPdf pdf;
+    switch (await _importService.store(picked: source, documentId: id)) {
+      case Err<StoredPdf>(:final Failure failure):
+        return Err<Document>(failure);
+      case Ok<StoredPdf>(:final StoredPdf value):
+        pdf = value;
     }
-    final StoredPdf pdf = (stored as Ok<StoredPdf>).value;
 
     return _repository.add(
       Document(
