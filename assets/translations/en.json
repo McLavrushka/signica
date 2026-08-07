@@ -12,8 +12,7 @@
     "signed_badge": "Signed",
     "empty_title": "No Documents Yet",
     "empty_subtitle": "Your can add documents from",
-    "search_hint": "Search Documents",
-    "selected_count": "{count} Items"
+    "search_hint": "Search Documents"
   },
   "sources": {
     "sheet_title": "Add Document From",
@@ -28,7 +27,8 @@
     "deselect_all": "Deselect All ({count})",
     "delete": "Delete",
     "share": "Share",
-    "print": "Print"
+    "print": "Print",
+    "confirm": "OK"
   },
   "errors": {
     "import_failed": "Could not add the document",
