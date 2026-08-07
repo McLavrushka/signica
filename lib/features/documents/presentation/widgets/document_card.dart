@@ -54,19 +54,17 @@ class DocumentCard extends StatelessWidget {
                     : null,
               ),
               // Signing is the card's one action, so it is worth animating.
-              Padding(
-                padding: const EdgeInsets.only(bottom: SignedBadge.bottomInset),
-                child: AnimatedScale(
-                  scale: document.isSigned ? 1 : 0.6,
-                  duration: AppMotion.medium,
-                  curve: AppMotion.emphasized,
-                  child: AnimatedOpacity(
-                    opacity: document.isSigned ? 1 : 0,
-                    duration: AppMotion.fast,
-                    child: const SignedBadge(),
-                  ),
+              AnimatedScale(
+                scale: document.isSigned ? 1 : 0.6,
+                duration: AppMotion.medium,
+                curve: AppMotion.emphasized,
+                child: AnimatedOpacity(
+                  opacity: document.isSigned ? 1 : 0,
+                  duration: AppMotion.fast,
+                  child: const SignedBadge(),
                 ),
               ),
+
               if (isSelected case final bool selected)
                 Positioned.fill(
                   child: Center(child: SelectionMark(isSelected: selected)),
