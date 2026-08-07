@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc_concurrency/bloc_concurrency.dart';
+import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
@@ -135,9 +136,14 @@ class DocumentsBloc extends Bloc<DocumentsEvent, DocumentsState> {
       result.fold(
         ok: (_) => state.copyWith(isImporting: false),
         // Backing out of a picker is a normal action, not an error to report.
-        err: (Failure failure) => failure is PickerCancelled
-            ? state.copyWith(isImporting: false)
-            : state.copyWith(isImporting: false, failure: failure),
+        err: (Failure failure) {
+          if (failure is! PickerCancelled) {
+            debugPrint('DEBUG import failure: $failure cause=${failure.cause}');
+          }
+          return failure is PickerCancelled
+              ? state.copyWith(isImporting: false)
+              : state.copyWith(isImporting: false, failure: failure);
+        },
       ),
     );
   }

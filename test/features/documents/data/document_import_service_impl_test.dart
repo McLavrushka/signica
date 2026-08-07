@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cunning_document_scanner/cunning_document_scanner.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
@@ -69,10 +70,20 @@ void main() {
       );
     });
 
+    /// The scanner does not throw a `PlatformException` at all — it wraps the
+    /// platform error in its own type, and its denial code is lower case. The
+    /// literal is spelled out rather than taken from the named constructor so
+    /// the test fails if the package ever changes the string.
     test('the scanner reports its own denial code', () async {
       expect(
-        await pickThrowing(PlatformException(code: 'PERMISSION_DENIED')),
+        await pickThrowing(
+          const CunningDocumentScannerException.permissionDenied(),
+        ),
         isA<PermissionDenied>(),
+      );
+      expect(
+        const CunningDocumentScannerException.permissionDenied().code,
+        'permission_denied',
       );
     });
 

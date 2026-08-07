@@ -39,7 +39,7 @@ abstract final class AppGlass {
 
   /// Source pills on the empty state: a light translucent surface.
   static const LiquidGlassSettings sourceOnSurface = LiquidGlassSettings(
-    glassColor: Color(0x59FFFFFF),
+    glassColor: Color(0x26FFFFFF),
     thickness: 20,
     blur: 6,
     lightIntensity: 1.0,
