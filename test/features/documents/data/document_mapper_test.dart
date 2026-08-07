@@ -10,6 +10,7 @@ void main() {
   DocumentRow row({String? lastPreview, bool isSigned = false}) => DocumentRow(
     id: 'doc-1',
     name: 'Contract',
+    nameFolded: 'contract',
     filePath: 'documents/doc-1.pdf',
     firstPagePreviewPath: 'previews/doc-1-first.png',
     lastPagePreviewPath: lastPreview,

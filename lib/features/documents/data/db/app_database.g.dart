@@ -27,6 +27,18 @@ class $DocumentRowsTable extends DocumentRows
     type: DriftSqlType.string,
     requiredDuringInsert: true,
   );
+  static const VerificationMeta _nameFoldedMeta = const VerificationMeta(
+    'nameFolded',
+  );
+  @override
+  late final GeneratedColumn<String> nameFolded = GeneratedColumn<String>(
+    'name_folded',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(''),
+  );
   static const VerificationMeta _filePathMeta = const VerificationMeta(
     'filePath',
   );
@@ -101,6 +113,7 @@ class $DocumentRowsTable extends DocumentRows
   List<GeneratedColumn> get $columns => [
     id,
     name,
+    nameFolded,
     filePath,
     firstPagePreviewPath,
     lastPagePreviewPath,
@@ -132,6 +145,12 @@ class $DocumentRowsTable extends DocumentRows
       );
     } else if (isInserting) {
       context.missing(_nameMeta);
+    }
+    if (data.containsKey('name_folded')) {
+      context.handle(
+        _nameFoldedMeta,
+        nameFolded.isAcceptableOrUnknown(data['name_folded']!, _nameFoldedMeta),
+      );
     }
     if (data.containsKey('file_path')) {
       context.handle(
@@ -200,6 +219,10 @@ class $DocumentRowsTable extends DocumentRows
         DriftSqlType.string,
         data['${effectivePrefix}name'],
       )!,
+      nameFolded: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}name_folded'],
+      )!,
       filePath: attachedDatabase.typeMapping.read(
         DriftSqlType.string,
         data['${effectivePrefix}file_path'],
@@ -236,6 +259,12 @@ class $DocumentRowsTable extends DocumentRows
 class DocumentRow extends DataClass implements Insertable<DocumentRow> {
   final String id;
   final String name;
+
+  /// Search index for [name], folded through `foldSearchText`. Derived, always
+  /// written together with the name — never edited on its own. The empty
+  /// default exists so `ALTER TABLE ... ADD COLUMN` can run on existing rows;
+  /// the v2 migration backfills them right after.
+  final String nameFolded;
   final String filePath;
   final String firstPagePreviewPath;
   final String? lastPagePreviewPath;
@@ -245,6 +274,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
   const DocumentRow({
     required this.id,
     required this.name,
+    required this.nameFolded,
     required this.filePath,
     required this.firstPagePreviewPath,
     this.lastPagePreviewPath,
@@ -257,6 +287,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     final map = <String, Expression>{};
     map['id'] = Variable<String>(id);
     map['name'] = Variable<String>(name);
+    map['name_folded'] = Variable<String>(nameFolded);
     map['file_path'] = Variable<String>(filePath);
     map['first_page_preview_path'] = Variable<String>(firstPagePreviewPath);
     if (!nullToAbsent || lastPagePreviewPath != null) {
@@ -272,6 +303,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     return DocumentRowsCompanion(
       id: Value(id),
       name: Value(name),
+      nameFolded: Value(nameFolded),
       filePath: Value(filePath),
       firstPagePreviewPath: Value(firstPagePreviewPath),
       lastPagePreviewPath: lastPagePreviewPath == null && nullToAbsent
@@ -291,6 +323,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     return DocumentRow(
       id: serializer.fromJson<String>(json['id']),
       name: serializer.fromJson<String>(json['name']),
+      nameFolded: serializer.fromJson<String>(json['nameFolded']),
       filePath: serializer.fromJson<String>(json['filePath']),
       firstPagePreviewPath: serializer.fromJson<String>(
         json['firstPagePreviewPath'],
@@ -309,6 +342,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     return <String, dynamic>{
       'id': serializer.toJson<String>(id),
       'name': serializer.toJson<String>(name),
+      'nameFolded': serializer.toJson<String>(nameFolded),
       'filePath': serializer.toJson<String>(filePath),
       'firstPagePreviewPath': serializer.toJson<String>(firstPagePreviewPath),
       'lastPagePreviewPath': serializer.toJson<String?>(lastPagePreviewPath),
@@ -321,6 +355,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
   DocumentRow copyWith({
     String? id,
     String? name,
+    String? nameFolded,
     String? filePath,
     String? firstPagePreviewPath,
     Value<String?> lastPagePreviewPath = const Value.absent(),
@@ -330,6 +365,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
   }) => DocumentRow(
     id: id ?? this.id,
     name: name ?? this.name,
+    nameFolded: nameFolded ?? this.nameFolded,
     filePath: filePath ?? this.filePath,
     firstPagePreviewPath: firstPagePreviewPath ?? this.firstPagePreviewPath,
     lastPagePreviewPath: lastPagePreviewPath.present
@@ -343,6 +379,9 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     return DocumentRow(
       id: data.id.present ? data.id.value : this.id,
       name: data.name.present ? data.name.value : this.name,
+      nameFolded: data.nameFolded.present
+          ? data.nameFolded.value
+          : this.nameFolded,
       filePath: data.filePath.present ? data.filePath.value : this.filePath,
       firstPagePreviewPath: data.firstPagePreviewPath.present
           ? data.firstPagePreviewPath.value
@@ -361,6 +400,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
     return (StringBuffer('DocumentRow(')
           ..write('id: $id, ')
           ..write('name: $name, ')
+          ..write('nameFolded: $nameFolded, ')
           ..write('filePath: $filePath, ')
           ..write('firstPagePreviewPath: $firstPagePreviewPath, ')
           ..write('lastPagePreviewPath: $lastPagePreviewPath, ')
@@ -375,6 +415,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
   int get hashCode => Object.hash(
     id,
     name,
+    nameFolded,
     filePath,
     firstPagePreviewPath,
     lastPagePreviewPath,
@@ -388,6 +429,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
       (other is DocumentRow &&
           other.id == this.id &&
           other.name == this.name &&
+          other.nameFolded == this.nameFolded &&
           other.filePath == this.filePath &&
           other.firstPagePreviewPath == this.firstPagePreviewPath &&
           other.lastPagePreviewPath == this.lastPagePreviewPath &&
@@ -399,6 +441,7 @@ class DocumentRow extends DataClass implements Insertable<DocumentRow> {
 class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
   final Value<String> id;
   final Value<String> name;
+  final Value<String> nameFolded;
   final Value<String> filePath;
   final Value<String> firstPagePreviewPath;
   final Value<String?> lastPagePreviewPath;
@@ -409,6 +452,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
   const DocumentRowsCompanion({
     this.id = const Value.absent(),
     this.name = const Value.absent(),
+    this.nameFolded = const Value.absent(),
     this.filePath = const Value.absent(),
     this.firstPagePreviewPath = const Value.absent(),
     this.lastPagePreviewPath = const Value.absent(),
@@ -420,6 +464,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
   DocumentRowsCompanion.insert({
     required String id,
     required String name,
+    this.nameFolded = const Value.absent(),
     required String filePath,
     required String firstPagePreviewPath,
     this.lastPagePreviewPath = const Value.absent(),
@@ -436,6 +481,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
   static Insertable<DocumentRow> custom({
     Expression<String>? id,
     Expression<String>? name,
+    Expression<String>? nameFolded,
     Expression<String>? filePath,
     Expression<String>? firstPagePreviewPath,
     Expression<String>? lastPagePreviewPath,
@@ -447,6 +493,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
     return RawValuesInsertable({
       if (id != null) 'id': id,
       if (name != null) 'name': name,
+      if (nameFolded != null) 'name_folded': nameFolded,
       if (filePath != null) 'file_path': filePath,
       if (firstPagePreviewPath != null)
         'first_page_preview_path': firstPagePreviewPath,
@@ -462,6 +509,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
   DocumentRowsCompanion copyWith({
     Value<String>? id,
     Value<String>? name,
+    Value<String>? nameFolded,
     Value<String>? filePath,
     Value<String>? firstPagePreviewPath,
     Value<String?>? lastPagePreviewPath,
@@ -473,6 +521,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
     return DocumentRowsCompanion(
       id: id ?? this.id,
       name: name ?? this.name,
+      nameFolded: nameFolded ?? this.nameFolded,
       filePath: filePath ?? this.filePath,
       firstPagePreviewPath: firstPagePreviewPath ?? this.firstPagePreviewPath,
       lastPagePreviewPath: lastPagePreviewPath ?? this.lastPagePreviewPath,
@@ -491,6 +540,9 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
     }
     if (name.present) {
       map['name'] = Variable<String>(name.value);
+    }
+    if (nameFolded.present) {
+      map['name_folded'] = Variable<String>(nameFolded.value);
     }
     if (filePath.present) {
       map['file_path'] = Variable<String>(filePath.value);
@@ -525,6 +577,7 @@ class DocumentRowsCompanion extends UpdateCompanion<DocumentRow> {
     return (StringBuffer('DocumentRowsCompanion(')
           ..write('id: $id, ')
           ..write('name: $name, ')
+          ..write('nameFolded: $nameFolded, ')
           ..write('filePath: $filePath, ')
           ..write('firstPagePreviewPath: $firstPagePreviewPath, ')
           ..write('lastPagePreviewPath: $lastPagePreviewPath, ')
@@ -552,6 +605,7 @@ typedef $$DocumentRowsTableCreateCompanionBuilder =
     DocumentRowsCompanion Function({
       required String id,
       required String name,
+      Value<String> nameFolded,
       required String filePath,
       required String firstPagePreviewPath,
       Value<String?> lastPagePreviewPath,
@@ -564,6 +618,7 @@ typedef $$DocumentRowsTableUpdateCompanionBuilder =
     DocumentRowsCompanion Function({
       Value<String> id,
       Value<String> name,
+      Value<String> nameFolded,
       Value<String> filePath,
       Value<String> firstPagePreviewPath,
       Value<String?> lastPagePreviewPath,
@@ -589,6 +644,11 @@ class $$DocumentRowsTableFilterComposer
 
   ColumnFilters<String> get name => $composableBuilder(
     column: $table.name,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get nameFolded => $composableBuilder(
+    column: $table.nameFolded,
     builder: (column) => ColumnFilters(column),
   );
 
@@ -642,6 +702,11 @@ class $$DocumentRowsTableOrderingComposer
     builder: (column) => ColumnOrderings(column),
   );
 
+  ColumnOrderings<String> get nameFolded => $composableBuilder(
+    column: $table.nameFolded,
+    builder: (column) => ColumnOrderings(column),
+  );
+
   ColumnOrderings<String> get filePath => $composableBuilder(
     column: $table.filePath,
     builder: (column) => ColumnOrderings(column),
@@ -687,6 +752,11 @@ class $$DocumentRowsTableAnnotationComposer
 
   GeneratedColumn<String> get name =>
       $composableBuilder(column: $table.name, builder: (column) => column);
+
+  GeneratedColumn<String> get nameFolded => $composableBuilder(
+    column: $table.nameFolded,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get filePath =>
       $composableBuilder(column: $table.filePath, builder: (column) => column);
@@ -744,6 +814,7 @@ class $$DocumentRowsTableTableManager
               ({
                 Value<String> id = const Value.absent(),
                 Value<String> name = const Value.absent(),
+                Value<String> nameFolded = const Value.absent(),
                 Value<String> filePath = const Value.absent(),
                 Value<String> firstPagePreviewPath = const Value.absent(),
                 Value<String?> lastPagePreviewPath = const Value.absent(),
@@ -754,6 +825,7 @@ class $$DocumentRowsTableTableManager
               }) => DocumentRowsCompanion(
                 id: id,
                 name: name,
+                nameFolded: nameFolded,
                 filePath: filePath,
                 firstPagePreviewPath: firstPagePreviewPath,
                 lastPagePreviewPath: lastPagePreviewPath,
@@ -766,6 +838,7 @@ class $$DocumentRowsTableTableManager
               ({
                 required String id,
                 required String name,
+                Value<String> nameFolded = const Value.absent(),
                 required String filePath,
                 required String firstPagePreviewPath,
                 Value<String?> lastPagePreviewPath = const Value.absent(),
@@ -776,6 +849,7 @@ class $$DocumentRowsTableTableManager
               }) => DocumentRowsCompanion.insert(
                 id: id,
                 name: name,
+                nameFolded: nameFolded,
                 filePath: filePath,
                 firstPagePreviewPath: firstPagePreviewPath,
                 lastPagePreviewPath: lastPagePreviewPath,

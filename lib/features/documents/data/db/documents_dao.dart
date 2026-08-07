@@ -2,6 +2,7 @@ import 'package:drift/drift.dart';
 import 'package:injectable/injectable.dart';
 import 'package:signica/features/documents/data/db/app_database.dart';
 import 'package:signica/features/documents/data/db/document_rows.dart';
+import 'package:signica/features/documents/data/db/search_text.dart';
 import 'package:signica/features/documents/domain/entities/documents_filter.dart';
 
 part 'documents_dao.g.dart';
@@ -25,11 +26,15 @@ class DocumentsDao extends DatabaseAccessor<AppDatabase>
                 OrderingTerm(expression: t.createdAt, mode: OrderingMode.desc),
           ]);
 
-    final String trimmed = query.trim();
-    if (trimmed.isNotEmpty) {
+    final String folded = foldSearchText(query);
+    if (folded.isNotEmpty) {
+      // `instr` over the folded column, not `LIKE`: it matches the needle
+      // literally, so `%` and `_` typed by the user stay ordinary characters.
       statement.where(
-        ($DocumentRowsTable t) =>
-            t.name.lower().contains(trimmed.toLowerCase()),
+        ($DocumentRowsTable t) => FunctionCallExpression<int>(
+          'instr',
+          <Expression<Object>>[t.nameFolded, Variable<String>(folded)],
+        ).isBiggerThanValue(0),
       );
     }
 

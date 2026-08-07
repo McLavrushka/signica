@@ -2,6 +2,7 @@ import 'package:drift/native.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:signica/features/documents/data/db/app_database.dart';
 import 'package:signica/features/documents/data/db/documents_dao.dart';
+import 'package:signica/features/documents/data/db/search_text.dart';
 import 'package:signica/features/documents/domain/entities/documents_filter.dart';
 
 void main() {
@@ -16,6 +17,7 @@ void main() {
   }) => DocumentRow(
     id: id,
     name: name,
+    nameFolded: foldSearchText(name),
     filePath: '/tmp/$id.pdf',
     firstPagePreviewPath: '/tmp/$id-first.png',
     pageCount: 1,
@@ -63,6 +65,25 @@ void main() {
     final List<DocumentRow> rows = await dao.watch(query: 'rent').first;
 
     expect(rows.single.name, 'Rental Agreement');
+  });
+
+  test('watch matches a Cyrillic query case-insensitively', () async {
+    await dao.insertRow(row('1', 'Договор аренды'));
+    await dao.insertRow(row('2', 'Резюме'));
+
+    final List<DocumentRow> upper = await dao.watch(query: 'ДОГОВОР').first;
+    final List<DocumentRow> lower = await dao.watch(query: 'договор').first;
+
+    expect(upper.single.name, 'Договор аренды');
+    expect(lower.single.name, 'Договор аренды');
+  });
+
+  test('watch treats LIKE wildcards in the query as literal text', () async {
+    await dao.insertRow(row('1', 'Resume'));
+    await dao.insertRow(row('2', '100% cotton'));
+
+    expect(await dao.watch(query: '%').first, hasLength(1));
+    expect(await dao.watch(query: '_').first, isEmpty);
   });
 
   test('watch re-emits after a write', () async {

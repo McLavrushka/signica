@@ -8,6 +8,12 @@ class DocumentRows extends Table {
 
   TextColumn get name => text()();
 
+  /// Search index for [name], folded through `foldSearchText`. Derived, always
+  /// written together with the name — never edited on its own. The empty
+  /// default exists so `ALTER TABLE ... ADD COLUMN` can run on existing rows;
+  /// the v2 migration backfills them right after.
+  TextColumn get nameFolded => text().withDefault(const Constant(''))();
+
   TextColumn get filePath => text()();
 
   TextColumn get firstPagePreviewPath => text()();
