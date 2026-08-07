@@ -28,7 +28,8 @@ class DocumentsDao extends DatabaseAccessor<AppDatabase>
     final String trimmed = query.trim();
     if (trimmed.isNotEmpty) {
       statement.where(
-        ($DocumentRowsTable t) => t.name.lower().contains(trimmed.toLowerCase()),
+        ($DocumentRowsTable t) =>
+            t.name.lower().contains(trimmed.toLowerCase()),
       );
     }
 
@@ -49,9 +50,9 @@ class DocumentsDao extends DatabaseAccessor<AppDatabase>
     return rows.map((DocumentRow row) => row.name).toList();
   }
 
-  Future<List<DocumentRow>> byIds(List<String> ids) =>
-      (select(documentRows)..where(($DocumentRowsTable t) => t.id.isIn(ids)))
-          .get();
+  Future<List<DocumentRow>> byIds(List<String> ids) => (select(
+    documentRows,
+  )..where(($DocumentRowsTable t) => t.id.isIn(ids))).get();
 
   Future<void> insertRow(DocumentRow row) =>
       into(documentRows).insert(row, mode: InsertMode.insertOrReplace);
@@ -60,7 +61,7 @@ class DocumentsDao extends DatabaseAccessor<AppDatabase>
       (update(documentRows)..where(($DocumentRowsTable t) => t.id.equals(id)))
           .write(DocumentRowsCompanion(isSigned: Value<bool>(isSigned)));
 
-  Future<void> deleteByIds(List<String> ids) =>
-      (delete(documentRows)..where(($DocumentRowsTable t) => t.id.isIn(ids)))
-          .go();
+  Future<void> deleteByIds(List<String> ids) => (delete(
+    documentRows,
+  )..where(($DocumentRowsTable t) => t.id.isIn(ids))).go();
 }

@@ -10,6 +10,20 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:pdfrx/pdfrx.dart' as pdfrx;
 import 'package:signica/features/documents/data/sources/file_storage.dart';
 
+/// Raised when a page cannot be rasterised or its preview cannot be encoded.
+///
+/// A dedicated type rather than [StateError] so the layer above can classify
+/// it by type. It used to be told apart by looking for `'pdf'` in the message,
+/// which is not a contract and breaks the moment the wording changes.
+class PdfRenderException implements Exception {
+  const PdfRenderException(this.message);
+
+  final String message;
+
+  @override
+  String toString() => 'PdfRenderException: $message';
+}
+
 /// Result of rendering a document's preview pages.
 class RenderedPreviews {
   const RenderedPreviews({
@@ -50,9 +64,8 @@ class PdfProcessor {
         pw.Page(
           pageFormat: PdfPageFormat.a4,
           margin: pw.EdgeInsets.zero,
-          build: (pw.Context context) => pw.Center(
-            child: pw.Image(image, fit: pw.BoxFit.contain),
-          ),
+          build: (pw.Context context) =>
+              pw.Center(child: pw.Image(image, fit: pw.BoxFit.contain)),
         ),
       );
     }
@@ -109,7 +122,7 @@ class PdfProcessor {
       backgroundColor: 0xFFFFFFFF,
     );
     if (rendered == null) {
-      throw StateError(
+      throw PdfRenderException(
         'Failed to render page ${page.pageNumber} of $documentId',
       );
     }
@@ -121,9 +134,9 @@ class PdfProcessor {
           format: ui.ImageByteFormat.png,
         );
         if (png == null) {
-          throw StateError('Failed to encode preview for $documentId');
+          throw PdfRenderException('Failed to encode preview for $documentId');
         }
-        final String path = await _storage.previewPath(documentId, label);
+        final String path = _storage.previewPath(documentId, label);
         await _storage.writeBytes(path, png.buffer.asUint8List());
         return path;
       } finally {

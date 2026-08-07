@@ -1,3 +1,6 @@
+import 'dart:io' show FileSystemException;
+
+import 'package:flutter/services.dart' show PlatformException;
 import 'package:injectable/injectable.dart';
 import 'package:signica/core/failure.dart';
 import 'package:signica/core/result.dart';
@@ -41,7 +44,7 @@ class DocumentImportServiceImpl implements DocumentImportService {
     required String documentId,
   }) async {
     try {
-      final String targetPath = await _storage.pdfPath(documentId);
+      final String targetPath = _storage.pdfPath(documentId);
 
       switch (picked) {
         // Already a PDF: copy it in untouched, no re-encoding.
@@ -70,19 +73,37 @@ class DocumentImportServiceImpl implements DocumentImportService {
       );
     } on Object catch (error) {
       // A half-written document must not survive a failed import.
-      await _storage.deleteIfExists(await _storage.pdfPath(documentId));
+      await _storage.deleteIfExists(_storage.pdfPath(documentId));
       return Err<StoredPdf>(_asFailure(error));
     }
   }
 
-  Failure _asFailure(Object error) {
-    final String message = error.toString().toLowerCase();
-    if (message.contains('permission') || message.contains('denied')) {
-      return PermissionDenied(cause: error);
-    }
-    if (message.contains('pdf') || message.contains('render')) {
-      return PdfFailure(cause: error);
-    }
-    return StorageFailure(cause: error);
-  }
+  /// Error codes the pickers raise when the OS refuses access. Codes are part
+  /// of each plugin's documented contract; the messages behind them are
+  /// localised by the system and must never be matched on.
+  static const Set<String> _accessDeniedCodes = <String>{
+    // image_picker, on both a denied photo library and a denied camera.
+    'photo_access_denied',
+    'camera_access_denied',
+    // cunning_document_scanner, which needs the camera to scan.
+    'PERMISSION_DENIED',
+  };
+
+  /// Classification by type, not by text.
+  ///
+  /// The previous version searched `error.toString()` for `'permission'`,
+  /// `'pdf'` and `'render'`, which mislabels in both directions: a
+  /// `PathNotFoundException` on `…/rendered.pdf` came out as [PdfFailure]
+  /// because the path contains "pdf", and a localised OS message never
+  /// contains "permission" at all.
+  Failure _asFailure(Object error) => switch (error) {
+    PdfRenderException() => PdfFailure(cause: error),
+    FileSystemException() => StorageFailure(cause: error),
+    PlatformException(:final String code)
+        when _accessDeniedCodes.contains(code) =>
+      PermissionDenied(cause: error),
+    // Deliberately not StorageFailure: an unrecognised error is unknown, and
+    // saying otherwise in the log helps nobody. The UI shows both the same.
+    _ => UnexpectedFailure(cause: error),
+  };
 }

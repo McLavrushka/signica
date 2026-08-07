@@ -1,7 +1,8 @@
 import 'package:drift/drift.dart';
 
-/// Stored documents. File paths are absolute; the files themselves live in the
-/// app documents directory and are removed together with the row.
+/// Stored documents. File paths are relative to the app documents directory,
+/// which moves between installs and OS upgrades; the repository resolves them
+/// through `FileStorage`. The files are removed together with the row.
 class DocumentRows extends Table {
   TextColumn get id => text()();
 
