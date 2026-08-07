@@ -39,6 +39,7 @@ dependencies:
   image_picker: ^1.2.3
   cunning_document_scanner: ^2.8.0
   pdf: ^3.11.0
+  printing: ^5.13.0
   pdfrx: ^2.4.7
 
   # Localization
@@ -70,6 +71,7 @@ flutter:
   assets:
     - assets/translations/
     - assets/icons/
+    - assets/icons/glyphs/
     - assets/images/
 
   fonts:
