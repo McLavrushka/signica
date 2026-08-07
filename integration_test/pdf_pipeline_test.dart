@@ -16,10 +16,7 @@ import 'package:signica/features/documents/data/sources/pdf_processor.dart';
 Future<String> _writeTestImage(String name, Color color) async {
   final ui.PictureRecorder recorder = ui.PictureRecorder();
   final Canvas canvas = Canvas(recorder);
-  canvas.drawRect(
-    const Rect.fromLTWH(0, 0, 600, 800),
-    Paint()..color = color,
-  );
+  canvas.drawRect(const Rect.fromLTWH(0, 0, 600, 800), Paint()..color = color);
   final ui.Image image = await recorder.endRecording().toImage(600, 800);
   final ByteData? bytes = await image.toByteData(
     format: ui.ImageByteFormat.png,
@@ -41,6 +38,7 @@ void main() {
   setUpAll(() async {
     await pdfrxFlutterInitialize();
     storage = FileStorage();
+    await storage.init();
     processor = PdfProcessor(storage);
   });
 
@@ -53,7 +51,7 @@ void main() {
     ];
 
     const String id = 'integration-multi';
-    final String target = await storage.pdfPath(id);
+    final String target = storage.pdfPath(id);
 
     await processor.buildPdfFromImages(imagePaths: images, targetPath: target);
     expect(File(target).existsSync(), isTrue);
@@ -84,7 +82,7 @@ void main() {
     ];
 
     const String id = 'integration-single';
-    final String target = await storage.pdfPath(id);
+    final String target = storage.pdfPath(id);
 
     await processor.buildPdfFromImages(imagePaths: images, targetPath: target);
     final RenderedPreviews previews = await processor.renderPreviews(
