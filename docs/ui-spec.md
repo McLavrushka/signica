@@ -1,12 +1,18 @@
 # Вёрстка: разбор макета по блокам
 
-Все числа взяты из Figma REST API (полный дамп — `figma-spec.md`, экспортированные фреймы @3x — `figma/*.png`).
+Числа сняты с макета (экспортированные фреймы @3x — `figma/*.png`).
 Базовый фрейм 375×812 pt. Координаты внутри фрейма, единицы — логические точки.
 
 Токены уже перенесены в код:
-- цвета — `lib/app/theme/app_colors.dart`
+- цвета и градиенты — `lib/app/theme/app_colors.dart`
 - типографика — `lib/app/theme/app_typography.dart`
-- размеры — `lib/app/theme/app_dimens.dart`
+- отступы — `lib/app/theme/app_spacing.dart`
+- радиусы — `lib/app/theme/app_radius.dart`
+- пресеты стекла — `lib/app/theme/app_glass.dart`
+- длительности и кривые — `lib/app/theme/app_motion.dart`
+
+Размеры компонентов (высота контрола, диаметр бейджа) токенами не являются и живут приватными
+константами рядом со своим виджетом — см. `docs/layout-rules.md`.
 
 Ассеты из макета: `assets/icons/logo_sign.svg`, `assets/images/empty_illustration.png`,
 `assets/images/source_{files,photos,scanner}.png`.
